@@ -11,6 +11,6 @@ export default defineNuxtConfig({
     },
     app: {
         // Checking environment variable to decide whether the link 
-        baseURL: process.env.DEV? '' : '/Name-of-Repo'  // Name of your GitHub Repository
+        baseURL: '/genesiscapital/'  // Name of your GitHub Repository
     }
 })

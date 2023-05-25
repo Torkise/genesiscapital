@@ -25,10 +25,9 @@
   
       <div v-for="area in areas" :key="area.id">
         <section :id="area.name.toLowerCase()" class="area-section">
-          <!-- Content for Section -->
           <h2 class="page-title">{{area.name}}</h2>
           <p>{{ area.description }}</p>
-          <NuxtLink :to="'areas/' + area.id"><div><p class="learnmore">Learn more..</p></div></NuxtLink>
+          <NuxtLink :to="'/areas/' + area.id"><div><p class="learnmore">Learn more..</p></div></NuxtLink>
         </section>
       </div>
   
