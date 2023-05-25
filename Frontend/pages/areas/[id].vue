@@ -1,5 +1,4 @@
 <template>
-  <h2>Ciao</h2>
     <h1> {{ area.name }}</h1>
     <div v-for="project in projects" :key="project.id">
       <h2>{{ project.title }}</h2>
