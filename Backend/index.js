@@ -1,5 +1,5 @@
 import express from "express"
-import { DataTypes, Sequelize } from "sequelize"
+import { DataTypes, Sequelize, Op } from "sequelize"
 import cors from "cors"
 
 import { fileURLToPath } from "url"
@@ -27,59 +27,6 @@ async function initDB() {
     const models = {}
 
     await db.authenticate()
-
-    models.Dog = db.define('dog', {
-        name: {
-            type: DataTypes.STRING,
-            allowNull: false
-        },
-        breed: {
-            type: DataTypes.STRING,
-            allowNull: false
-        },
-        age: {
-            type: DataTypes.NUMBER,
-            allowNull: false
-        },
-        description: {
-            type: DataTypes.STRING,
-            allowNull: true
-        }
-    })
-
-    models.Location = db.define('location', {
-        name: {
-            type: DataTypes.STRING,
-            allowNull: false
-        },
-        city: {
-            type: DataTypes.STRING,
-            allowNull: false
-        }
-    })
-    models.Employee = db.define('employee', {
-        id: {
-            type: DataTypes.INTEGER,
-            primaryKey: true,
-            allowNull: false
-        }, 
-        name: { 
-            type: DataTypes.STRING,
-            allowNull: false
-        }, 
-        title: { 
-            type: DataTypes.STRING,
-            allowNull: false
-        }, 
-        bio: {
-            type: DataTypes.STRING,
-            allowNull: true
-        },
-        photo: {
-            type: DataTypes.STRING,
-            allowNull: true
-        },
-    })
     
     models.Area = db.define('area', {
         id: {
@@ -128,8 +75,29 @@ async function initDB() {
         }
     })
 
-    models.Location.hasMany(models.Dog)
-    models.Dog.belongsTo(models.Location)
+    models.Employee = db.define('employee', {
+        id: {
+            type: DataTypes.INTEGER,
+            primaryKey: true,
+            allowNull: false
+        }, 
+        name: { 
+            type: DataTypes.STRING,
+            allowNull: false
+        }, 
+        title: { 
+            type: DataTypes.STRING,
+            allowNull: false
+        }, 
+        bio: {
+            type: DataTypes.STRING,
+            allowNull: true
+        },
+        photo: {
+            type: DataTypes.STRING,
+            allowNull: true
+        },
+    })
 
     await db.sync({ force: true })
 
@@ -224,20 +192,17 @@ async function initServer() {
     })
 
     app.get('/projects/area=:areaId', async (req, res) => {
+        const areaId = req.params.areaId
         try {
-            const area = await models.Area.findOne({
-                where: {
-                    id: req.params.areaId 
+            const area = await models.Area.findByPk(areaId)
+            const data = await models.Project.findAll({
+            where: {
+                areas: {
+                    [Op.substring]: area.name,
+                    },
                 }
-            })
-        const data = await models.Project.findAll({
-        where: {
-            areas: {
-                [Op.substring]: area.name,
-              },
-        }
-        });
-        res.status(200).json(data);
+            });
+            res.status(200).json(data);
     } catch (error) {
       console.error('Error fetching projects:', error);
       res.status(500).json({ error: 'Failed to fetch projects' });
@@ -271,58 +236,6 @@ async function initServer() {
                 id: req.params.areaId 
             }
         })
-        if (data) {
-            res.status(200).json(data)
-        }
-        else {
-            res.sendStatus(404)
-        }
-    })
-
-    app.get('/dogs', async (req, res) => {
-        const data = await models.Dog.findAll();
-
-        res.status(200).json(data)
-    })
-
-    app.get('/dogs/:id', async (req, res) => {
-        const data = await models.Dog.findOne({
-            where: {
-                id: req.params.id
-            },
-            include: [
-                {
-                    model: models.Location
-                }
-            ]
-        })
-
-        if (data) {
-            res.status(200).json(data)
-        }
-        else {
-            res.sendStatus(404)
-        }
-    })
-
-    app.get('/locations', async (req, res) => {
-        const data = await models.Location.findAll();
-
-        res.status(200).json(data)
-    })
-
-    app.get('/locations/:id', async (req, res) => {
-        const data = await models.Location.findOne({
-            where: {
-                id: req.params.id
-            },
-            include: [
-                {
-                    model: models.Dog
-                }
-            ]
-        })
-
         if (data) {
             res.status(200).json(data)
         }

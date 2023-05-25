@@ -7,11 +7,13 @@
         <p v-html="project.longDescription"></p>
         <h2>Areas</h2>
         <div class="project-areas" v-for="(area, key) in areas" :key="key">
-            <div @click="goToAreaPage(area.id)">
+            <NuxtLink :to="'/areas/' + area.id">
                 {{ area.name }}
-            </div>
+            </NuxtLink>
         </div>
-        <h2 class="supervisor">Supervisor: {{ employee.name }}</h2>
+        <NuxtLink :to="'/employees/' + employee.id">
+            <h2 class="supervisor">Supervisor: {{ employee.name }}</h2>
+        </NuxtLink>
     
 
     </div>

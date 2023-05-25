@@ -6,10 +6,10 @@
             <h3>{{ employee.title }}</h3>
             <div class="bio">{{ employee.bio }}</div>
             <div class = "project-box">
-                <h1 class="h-proj">Projects</h1>
-                <div v-for="(project, index) in projects" :key="index">
-                    <li @click="goToProject(project.id)">{{ project.title }}</li>
-                </div>
+                    <h1 class="h-proj">Projects</h1>
+                    <div v-for="(project, index) in projects" :key="index">
+                        <NuxtLink :to="'/projects/' + project.id ">{{ project.title }}</NuxtLink>
+                    </div>
             </div>    
         </div>
     </div>
@@ -20,7 +20,7 @@
         async asyncData() {
             const route = useRoute()
             const employeePromise = $fetch(useRuntimeConfig().public.serverURL + '/employees/' + route.params.id)
-            const projectsPromise = $fetch(useRuntimeConfig().public.serverURL + '/projects')
+            const projectsPromise = $fetch(useRuntimeConfig().public.serverURL + '/projects/supervisor=' + route.params.id)
             
             const [employee, projects] = await Promise.all([employeePromise, projectsPromise])
             

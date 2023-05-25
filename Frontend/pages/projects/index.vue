@@ -3,7 +3,6 @@
         async asyncData() {
             const route = useRoute()
             const projects = await $fetch(useRuntimeConfig().public.serverURL + '/projects')
-            
             return {
                 projects
             }
@@ -16,13 +15,15 @@
       <p>Welcome to Genesis Capital Projects page, where you can discover the latest investment opportunities and innovative startups we are backing. Our team of experienced professionals is dedicated to identifying and supporting the most promising ventures across a variety of sectors. Explore our portfolio and learn more about the exciting new companies we are supporting.</p>
       <div class="project-list">
         <div v-for="project in projects" :key="project.id">
-          <div class="project" @click="goToProjectPage(project.id)">
-            <div class="project-area" :class="area.toLowerCase()" v-for="area in project.areas" :key="area">
-              {{ area }}
-            </div>
-            <h2>{{ project.title }}</h2>
-            <p>{{ project.shortDescription }}</p>
-            <p class="learnmore">Learn more...</p>
+          <div class="project">
+            <NuxtLink :to="'/projects/' + project.id">
+              <div class="project-area" :class="area.toLowerCase()" v-for="area in project.areas" :key="area"> 
+                {{ area }}
+              </div>
+              <h2>{{ project.title }}</h2>
+              <p>{{ project.shortDescription }}</p>
+              <p class="learnmore">Learn more...</p>
+            </NuxtLink>
           </div>
         </div>
       </div>

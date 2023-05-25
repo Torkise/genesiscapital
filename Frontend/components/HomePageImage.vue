@@ -32,7 +32,7 @@ export default {
             setInterval(() => { 
                 this.currentIndex = (this.currentIndex + 1) % this.images.length
                 this.currentImage = this.images[this.currentIndex]
-            }, 10000)
+            }, 60000)
         }
     }
 }
