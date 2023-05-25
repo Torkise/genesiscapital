@@ -3,11 +3,14 @@
 -->
 <template>
     <header>
-        <h1>The Dog Shelter</h1>
+    <img alt="Vue logo" class="logo" src="@/assets/logo.svg"  />
         <nav>
             <NuxtLink to = "/">HOME</NuxtLink>
             <NuxtLink to = "/dogs">DOGS</NuxtLink>
             <NuxtLink to = "/locations">LOCATIONS</NuxtLink>
+            <NuxtLink to = "/projects">PROJECTS</NuxtLink>
+            <NuxtLink to = "/employees">EMPLOYEES</NuxtLink>
+            <NuxtLink to = "/areas">AREAS</NuxtLink>
             <NuxtLink to = "/about">ABOUT US</NuxtLink>
             <NuxtLink to = "/contact">CONTACT US</NuxtLink>
         </nav>
@@ -15,16 +18,12 @@
 </template>
 
 <style>
-    header
-    {
-        background-color: orange;
-    }
 
     header
     {
         padding: 0px 20px 0px 20px;
         margin-bottom: 5px;
-        border-bottom: 5px solid brown;
+        background-color: aliceblue;
         
         display: flex;
         justify-content: space-between;

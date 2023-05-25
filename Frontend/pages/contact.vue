@@ -1,91 +1,40 @@
-<!--
-    Contact Page
--->
 <template>
-    <main>
-        <main>
-            <p>
-                This are our contacts:
-                <ul>
-                    <li>E-mail: mail@shelter.it</li>
-                    <li>Tel: 053684864351</li>
-                </ul>
-            </p>
-            <form>
-                <div>
-                    <label for = "name">Name & Surname</label>
-                    <input type = "text" id = "name" placeholder = "Name & Surname">
-                </div>
-                <div>
-                    <label for = "mail">E-mail</label>
-                    <input type = "email" id = "mail" placeholder = "E-mail">
-                </div>
-                <div id = "message-div">
-                    <label for = "message">Message</label>
-                    <textarea id = "message" placeholder = "Write your message here"></textarea>  
-                </div>
-                <button>Send Message</button>
-            </form>
-        </main>
-    </main>
-</template>
-
-<style>
-    main {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
+    <div class="contact">
+      <h1 class="page-title">Contact Us</h1>
+      <p>If you have any questions or would like to discuss a potential investment opportunity, please feel free to contact us:</p>
+      <ul>
+        <li>Email: info@genesiscapital.com</li>
+        <li>Phone: (555) 555-5555</li>
+        <li>Address: 123 Main Street, Suite 100, Anytown USA</li>
+      </ul>
+      <br>
+      <h2>Connect with Us</h2>
+      <div class="social-media">
+        <a href="https://www.facebook.com/GenesisCapital"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Facebook_Logo_%282019%29.png/1200px-Facebook_Logo_%282019%29.png" alt="Facebook"></a>
+        <a href="https://twitter.com/GenesisCapital"><img src="https://logodownload.org/wp-content/uploads/2014/09/twitter-logo-.png" alt="Twitter"></a>
+        <a href="https://www.linkedin.com/company/genesis-capital/"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/800px-LinkedIn_logo_initials.png" alt="LinkedIn"></a>
+      </div>
+    </div>
+  </template>
+  
+  
+  <style>
+    .contact {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      padding: 8rem;
+      grid-gap: 20px;
     }
-
-    form {
-        width: 600px;
-        display: flex;
-        flex-direction: column;
-        padding: 15px;
-        border: 2px rgb(255, 102, 0) dashed;
-        border-radius: 5px;
-        row-gap: 20px;
+    .social-media {
+      display: flex;
+      /* justify-content: center; */
+      /* align-items: center; */
+      margin-top: 2rem;
     }
-
-    form div {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
+    .social-media img {
+      margin: 0 1rem;
+      height: 2rem;
     }
-
-    textarea {
-        width: 99%;
-        min-height: 5.1em;
-        resize: vertical;
-    }
-
-    input {
-        width: 60%;
-    }
-
-    label {
-        font-size: 13pt;
-        font-weight: bold;
-    }
-
-    #message-div {
-        flex-direction: column;
-    }
-
-    @media screen and (max-width: 650px) {
-        form div {
-            flex-direction: column;
-        }
-
-        input {
-            width: 100%;
-        }
-        
-        form {
-            width: 90%;
-            min-width: 400px;
-        }
-    }
-</style>
+  </style>
+  
