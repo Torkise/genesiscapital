@@ -6,8 +6,9 @@
     <img alt="Vue logo" class="logo" src="@/assets/logo.svg"  />
         <nav>
             <NuxtLink to = "/">HOME</NuxtLink>
-            <NuxtLink to = "/projects">PROJECTS</NuxtLink>
+            <NuxtLink to = "/featured">FEATURED PROJECTS</NuxtLink>
             <NuxtLink to = "/employees">EMPLOYEES</NuxtLink>
+            <NuxtLink to = "/projects">PROJECTS</NuxtLink>
             <NuxtLink to = "/areas">AREAS</NuxtLink>
             <NuxtLink to = "/about">ABOUT US</NuxtLink>
             <NuxtLink to = "/contact">CONTACT US</NuxtLink>
