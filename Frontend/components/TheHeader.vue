@@ -1,6 +1,3 @@
-<!--
-    Header of the page
--->
 <template>
     <header>
     <img alt="Vue logo" class="logo" src="@/assets/logo.svg"  />
@@ -32,7 +29,7 @@ header {
 nav {
     display: flex;
     gap: 15px;
-    font-size: 14pt;
+    font-size: 10pt;
     font-weight: bold;
 }
 
