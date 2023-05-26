@@ -1,13 +1,11 @@
-<!--
-    Header of the page
--->
 <template>
     <header>
     <img alt="Vue logo" class="logo" src="@/assets/logo.svg"  />
         <nav>
             <NuxtLink to = "/">HOME</NuxtLink>
-            <NuxtLink to = "/projects">PROJECTS</NuxtLink>
+            <NuxtLink to = "/featured">FEATURED PROJECTS</NuxtLink>
             <NuxtLink to = "/employees">EMPLOYEES</NuxtLink>
+            <NuxtLink to = "/projects">PROJECTS</NuxtLink>
             <NuxtLink to = "/areas">AREAS</NuxtLink>
             <NuxtLink to = "/about">ABOUT US</NuxtLink>
             <NuxtLink to = "/contact">CONTACT US</NuxtLink>
@@ -31,7 +29,7 @@ header {
 nav {
     display: flex;
     gap: 15px;
-    font-size: 14pt;
+    font-size: 10pt;
     font-weight: bold;
 }
 

@@ -24,10 +24,10 @@
     export default defineNuxtComponent({
             async asyncData() {
                 const route = useRoute()
-                const areaPromise = $fetch(useRuntimeConfig().public.serverURL + '/areas')
-                const employeePromise = $fetch(useRuntimeConfig().public.serverURL + '/employee/' + route.params.id)
+                const areaPromise = $fetch(useRuntimeConfig().public.serverURL + '/areas/project/projectid=' + route.params.id)
+                const supervisorPromise = $fetch(useRuntimeConfig().public.serverURL + '/supervisor/' + route.params.id)
                 const projectsPromise = $fetch(useRuntimeConfig().public.serverURL + '/project/' + route.params.id)
-                const [areas, project, employee] = await Promise.all([areaPromise, projectsPromise, employeePromise])
+                const [areas, project, employee] = await Promise.all([areaPromise, projectsPromise, supervisorPromise])
                 
                 return {
                     areas,
