@@ -136,6 +136,15 @@ async function initServer() {
         }
     })
 
+    app.get('/featuredprojects', async(req, res) => {
+        const data = await models.Project.findAll({
+            where: {
+                featured: true
+            }
+        })
+        res.status(200).json(data)
+    })
+
 
     app.get('/projects', async(req, res) => {
         const data = await models.Project.findAll();
