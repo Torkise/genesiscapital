@@ -7,6 +7,8 @@ import path from "path"
 
 import dbInitialization from "./dbInit.js"
 
+import parseArray from "./parseArray.js"
+
 const __filename = fileURLToPath(import.meta.url)
 const __dirname = path.dirname(__filename)
 
@@ -109,19 +111,12 @@ async function initDB() {
 async function initServer() {
     const models = await initDB()
 
+    /// Fetches all employees
     app.get('/employees', async(req, res) => {
         const data = await models.Employee.findAll();
         res.status(200).json(data)
     })
-
-    app.get('/employee/:id', async(req, res) => {
-        const projectId = req.params.id;
-        const project = await models.Project.findByPk(projectId)
-        const employeeId = project.supervisor
-        const employee = await models.Employee.findByPk(employeeId)
-        res.status(200).json(employee)
-    })
-
+    /// Fetches employee with id
     app.get('/employees/:id', async(req, res) => {
         const data = await models.Employee.findOne({
             where: {
@@ -136,21 +131,37 @@ async function initServer() {
         }
     })
 
+    /// Fetches supervisor of a project by project ID 
+    app.get('/supervisor/:id', async(req, res) => {
+        const projectId = req.params.id;
+        const project = await models.Project.findByPk(projectId)
+        const employeeId = project.supervisor
+        const employee = await models.Employee.findByPk(employeeId)
+        res.status(200).json(employee)
+    })
+
+    /// Fetches all featured projects 
     app.get('/featuredprojects', async(req, res) => {
         const data = await models.Project.findAll({
             where: {
                 featured: true
             }
         })
+        data.forEach(project => {
+            project.areas = parseArray(project.areas)
+        })
         res.status(200).json(data)
     })
 
-
+    /// Fetches all projects 
     app.get('/projects', async(req, res) => {
         const data = await models.Project.findAll();
+        data.forEach(project => {
+            project.areas = parseArray(project.areas)
+        })
         res.status(200).json(data)
     })
-    
+    /// Fetches project by projectId 
     app.get('/project/:id', async(req, res) => {
         const data = await models.Project.findOne({
             where: {
@@ -158,13 +169,14 @@ async function initServer() {
             }
         });
         if (data) {
+            data.areas = parseArray(data.areas)
             res.status(200).json(data)
         }
         else {
             res.sendStatus(404)
         }
     })
-
+    /// Fetches all projects who has employeeId as their supervisor 
     app.get('/projects/supervisor=:employeeId', async(req, res) => {
         const supervisorId = req.params.employeeId
         const data = await models.Project.findAll({
@@ -173,6 +185,9 @@ async function initServer() {
             }
         }); 
         if (data) {
+            data.forEach(project => {
+                project.areas = parseArray(project.areas)
+            })
            res.status(200).json(data)
         }
         else {
@@ -180,26 +195,7 @@ async function initServer() {
         }
     })
 
-
-    app.get('/projects/supervisor=:employeeId', async(req, res) => {
-        const supervisorId = req.params.employeeId
-        const data = await models.Project.findAll({
-            where: {
-                supervisor: supervisorId
-            }
-        }); 
-        res.status(200).json(data)
-    })
-
-    app.get('/projects/featured', async(req, res) => {
-        const data = await models.Project.findAll({
-            where: {
-                featured: true
-            }
-        })
-        res.status(200).json(data)
-    })
-
+    /// Fetches all projects that are tagget with the areaId
     app.get('/projects/area=:areaId', async (req, res) => {
         const areaId = req.params.areaId
         try {
@@ -211,6 +207,9 @@ async function initServer() {
                     },
                 }
             });
+            data.forEach(project => {
+                project.areas = parseArray(project.areas)
+            })
             res.status(200).json(data);
     } catch (error) {
       console.error('Error fetching projects:', error);
@@ -218,11 +217,13 @@ async function initServer() {
     }
   });
 
+    /// Fetches all areas
     app.get('/areas', async(req, res) => {
         const data = await models.Area.findAll();
         res.status(200).json(data)
     })
 
+    
     app.get('/areas/project/projectid=:projectid', async(req, res) => {
         const projectId = req.params.projectid;
         const project = await models.Project.findByPk(projectId)
@@ -239,6 +240,7 @@ async function initServer() {
         res.status(200).json(data)
     })
 
+    /// Fetches area with id = areaID
     app.get('/areas/area=:areaId', async(req, res) => {
         const data = await models.Area.findOne({
             where: {
