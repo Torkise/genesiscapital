@@ -24,15 +24,9 @@
       <img src="https://thumbs.dreamstime.com/b/technology-logo-tech-firm-logo-vector-design-full-vector-template-technology-logo-tech-firm-logo-vector-design-full-vector-109273835.jpg" alt="Employees Photo">
     </div>
   </div>
-  <div class="home"></div>
 </template>
 
 <style>
-  .home {
-    display: flex;
-    flex-direction: column;
-    padding: 8rem;
-  }
 
   .section {
     display: flex;
@@ -43,7 +37,6 @@
   }
 
   .image-wrapper {
-    flex: 0 0 50%;
     overflow: hidden;
   }
 

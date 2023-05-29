@@ -45,7 +45,6 @@ export default {
     position: absolute;
     top: 0; 
     left: 0;
-    width: 100%;
     padding-bottom: 56.25%;  
     position: relative;
   }
@@ -61,7 +60,6 @@ export default {
   }
 
 
-
   .image-container img {
     position: absolute;
     top:0;
@@ -72,6 +70,7 @@ export default {
     object-fit: cover;
     object-position: center;
   }
+
   .fade-enter-active,
 .fade-leave-active {
   transition: opacity 0.5s ease;
