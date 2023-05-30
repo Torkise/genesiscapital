@@ -17,13 +17,15 @@ Through our strategic investment and unwavering support, we have helped catalyze
     <div class="supervisor">
         <h3>Supervised By:</h3>
         <h2>
-            <NuxtLink :to="'/employees/' + project.supervisor">{{ project.supervisor }}</NuxtLink>
+            <NuxtLink :to="'/employees/' + project.supervisor">{{ project.projectSupervisor.name }}</NuxtLink>
         </h2>
     </div>
     <hr/>
     <div style="margin-left: 2rem;">
         <div class="area" :class="area.toLowerCase()" v-for="area in project.areas" :key="area">
-            {{ area }}
+            <NuxtLink :to="'/areas/' + get_area_id(area)">
+                {{ area }}
+            </NuxtLink>
         </div>
     </div>
 

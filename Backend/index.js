@@ -1,5 +1,5 @@
 import express from "express"
-import { DataTypes, Sequelize, Op } from "sequelize"
+import { DataTypes, Sequelize, Op, Model } from "sequelize"
 import cors from "cors"
 
 import { fileURLToPath } from "url"
@@ -145,7 +145,14 @@ async function initServer() {
         const data = await models.Project.findAll({
             where: {
                 featured: true
+            },
+            include: [
+                {
+                    model: models.Employee,
+                    as: 'projectSupervisor',
+                    attributes: ['name']
             }
+        ]
         })
         data.forEach(project => {
             project.areas = parseArray(project.areas)
