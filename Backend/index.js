@@ -145,7 +145,14 @@ async function initServer() {
         const data = await models.Project.findAll({
             where: {
                 featured: true
+            },
+            include: [
+                {
+                    model: models.Employee,
+                    as: 'projectSupervisor',
+                    attributes: ['name']
             }
+        ]
         })
         data.forEach(project => {
             project.areas = parseArray(project.areas)

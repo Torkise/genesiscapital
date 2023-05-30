@@ -17,7 +17,7 @@ Through our strategic investment and unwavering support, we have helped catalyze
     <div class="supervisor">
         <h3>Supervised By:</h3>
         <h2>
-            <NuxtLink :to="'/employees/' + project.supervisor">{{ project.supervisor }}</NuxtLink>
+            <NuxtLink :to="'/employees/' + project.supervisor">{{ project.projectSupervisor.name }}</NuxtLink>
         </h2>
     </div>
     <hr/>
