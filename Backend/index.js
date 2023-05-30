@@ -1,5 +1,5 @@
 import express from "express"
-import { DataTypes, Sequelize, Op } from "sequelize"
+import { DataTypes, Sequelize, Op, Model } from "sequelize"
 import cors from "cors"
 
 import { fileURLToPath } from "url"

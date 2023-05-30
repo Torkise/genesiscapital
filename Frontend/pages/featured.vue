@@ -23,7 +23,9 @@ Through our strategic investment and unwavering support, we have helped catalyze
     <hr/>
     <div style="margin-left: 2rem;">
         <div class="area" :class="area.toLowerCase()" v-for="area in project.areas" :key="area">
-            {{ area }}
+            <NuxtLink :to="'/areas/' + get_area_id(area)">
+                {{ area }}
+            </NuxtLink>
         </div>
     </div>
 

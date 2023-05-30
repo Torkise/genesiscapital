@@ -155,7 +155,6 @@ export default async (models) => {
       }
     ];
 
-
     await models.Employee.bulkCreate(employeeModel)
     await models.Project.bulkCreate(projectModel)
     await models.Area.bulkCreate(areaModel)
