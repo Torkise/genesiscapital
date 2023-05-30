@@ -1,6 +1,6 @@
 <template>
   <div class="meet-the-employees">
-    <h1 class="page-title">Meet the experts</h1>
+    <h1>Meet the experts</h1>
     <p class="page-text">Our company is proud to have a team of highly skilled and experienced professionals. Each of our employees brings unique expertise and perspectives to the table, allowing us to provide the best possible service to our clients. Get to know our team members below:</p>
     <br>
     <div class="employees-list">
@@ -33,7 +33,12 @@
 .meet-the-employees {
   display: flex;
   flex-direction: column;
-  padding-left: 2rem;
+}
+
+.meet-the-employees h1 {
+    font-size: xx-large;
+    border-bottom: 2px solid #FF7A00;
+    position: relative;
 }
 
 .employees-list {

@@ -11,7 +11,7 @@
 </script>
 <template>
     <div class="projects">
-      <h1 class="page-title">A Look into Our Investments</h1>
+      <h1>A Look into Our Investments</h1>
       <p>Welcome to Genesis Capital Projects page, where you can discover the latest investment opportunities and innovative startups we are backing. Our team of experienced professionals is dedicated to identifying and supporting the most promising ventures across a variety of sectors. Explore our portfolio and learn more about the exciting new companies we are supporting.</p>
       <div class="project-list">
         <div v-for="project in projects" :key="project.id">
@@ -35,8 +35,13 @@
       min-height: 100vh;
       display: flex;
       flex-direction: column;
-      padding: 8rem;
       grid-gap: 20px;
+    }
+
+    .projects h1 {
+      font-size: xx-large;
+      border-bottom: 2px solid #FF7A00;
+      position: relative;
     }
     
     .project-list {
@@ -46,10 +51,10 @@
     }
     
     .project {
-      width: 100%;
-      max-width: 30rem;
+      width: 30rem;
+      height: 10rem;
       padding: 2rem;
-      border: 1px solid #ddd;
+      border: 2px solid #ddd;
       transition: all 0.3s cubic-bezier(.25,.8,.25,1);
       border-radius: 5px;
     }

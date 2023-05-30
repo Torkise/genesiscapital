@@ -13,63 +13,63 @@ export default async (models) => {
           id: 2,
           name: "Jane Smith",
           title: "Investment Associate",
-          bio: "Jane specializes in identifying emerging technologies...",
+          bio: "Jane specializes in identifying emerging technologies and investment opportunities. With a keen eye for market trends, she excels in analyzing potential risks and returns for our clients. Jane's passion for technology and finance drives her to stay up-to-date with the latest industry developments. She has a proven track record of successfully advising clients on strategic investment decisions, helping them achieve their financial goals. Jane's dedication, analytical skills, and attention to detail make her an invaluable asset to our team.",
           photo: "https://cdn.shopify.com/s/files/1/0582/2270/6885/collections/11.jpg?v=1629359113",
         },
         {
           id: 3,
           name: "Bob Johnson",
           title: "Chief Financial Officer",
-          bio: "Bob has a background in accounting and finance, and...",
+          bio: "Bob brings a wealth of experience in accounting and finance to our organization. With a strong background in financial management, he oversees our company's financial operations with precision and expertise. Bob is a strategic thinker, capable of analyzing complex financial data and providing valuable insights for decision-making. His deep understanding of financial regulations and industry best practices ensures compliance and optimal financial performance. Bob's leadership skills and ability to streamline processes contribute to the overall growth and success of our organization. With his dedication and commitment to financial excellence, Bob plays a crucial role in driving our company's financial strategy forward.",
           photo: "https://www.ucwv.edu/wp-content/uploads/2019/08/DS9A4801-500x500.jpg",
         },
         {
           id: 4,
           name: "Sarah Lee",
           title: "Marketing Manager",
-          bio: "Sarah is an expert in brand strategy and marketing...",
+          bio: "Sarah is an accomplished marketing professional with expertise in brand strategy and marketing campaigns. She possesses a keen understanding of consumer behavior and market trends, allowing her to develop effective marketing strategies that resonate with target audiences. Sarah's creative mindset and attention to detail enable her to craft compelling brand stories and deliver impactful marketing initiatives. With a passion for innovation, she constantly explores new marketing channels and techniques to enhance brand visibility and drive business growth. Sarah's strong communication and leadership skills make her a valuable asset in collaborating with cross-functional teams and achieving marketing objectives. Her dedication to delivering results and fostering meaningful connections with customers sets her apart as a dynamic marketing manager.",
           photo: "https://media.licdn.com/dms/image/C5603AQHrwMS6SAuFBQ/profile-displayphoto-shrink_800_800/0/1544652821280?e=2147483647&v=beta&t=PRzrWewGwZfP7b3dwavprL-NdlvP3oDTg_C7f1rXHwg"
         },
         {
           id: 5,
           name: "Mike Wilson",
           title: "Engineering Manager",
-          bio: "Mike leads our engineering team and has a background...",
+          bio: "Mike is a seasoned engineering professional who leads our talented engineering team. With a solid background in software development and project management, he brings a wealth of technical expertise to our organization. Mike's strong leadership skills and strategic mindset enable him to effectively guide and mentor his team, ensuring efficient project execution and high-quality deliverables. He has a deep understanding of the latest technologies and industry best practices, which allows him to drive innovation and optimize engineering processes. Mike's dedication to excellence and attention to detail ensure that our engineering projects are completed on time and within budget. His collaborative approach and excellent communication skills foster a positive work environment, empowering his team to achieve outstanding results. With Mike at the helm, our engineering department continues to thrive and deliver exceptional solutions to our clients.",
           photo: "https://www.centralnicreseller.com/media/pages/images/b9dfeb0dfa-1668507825/adobestock-113998009-cropped-500x.jpg"
         },
         {
           id: 6,
           name: "Samantha Brown",
           title: "Investment Analyst",
-          bio: "Samantha has a keen eye for market trends and a passion for...",
+          bio: "Samantha is a skilled investment analyst with a keen eye for market trends and a true passion for the financial industry. With a strong background in finance and a meticulous approach to research and analysis, Samantha excels in evaluating investment opportunities and assessing their potential risks and returns. Her ability to identify emerging market trends and make data-driven investment recommendations sets her apart in the field. Samantha's dedication to staying updated with the latest market developments and economic indicators allows her to provide valuable insights to our clients. Her analytical mindset, attention to detail, and ability to interpret complex financial data make her a valuable asset to our team. Samantha's commitment to helping clients achieve their financial goals and her unwavering enthusiasm for the investment world make her an invaluable member of our organization.",
           photo: "https://s3.amazonaws.com/images.salonlofts.com/system/images/9644/large/87141455E6355-3F7F-492E-AD5D-7785122E0B2D.jpeg"
         },
         {
           id: 7,
           name: "Mark Davis",
           title: "Senior Advisor",
-          bio: "Mark has advised startups and established companies alike...",
+          bio: "Mark is a seasoned professional with a wealth of experience in advising startups and established companies across various industries. With a strong background in business strategy and entrepreneurship, Mark has a deep understanding of the challenges and opportunities that organizations face in today's competitive landscape. As a Senior Advisor, he leverages his expertise to provide valuable guidance and strategic insights to our clients. Mark has a proven track record of helping companies navigate complex business environments, optimize their operations, and drive sustainable growth. His analytical acumen, coupled with his ability to identify market trends and opportunities, enables him to develop tailored strategies that align with our clients' objectives. Mark's collaborative approach and excellent interpersonal skills allow him to establish strong relationships with stakeholders and facilitate effective decision-making processes. His dedication to delivering results and his passion for fostering business success make him a trusted advisor and an invaluable asset to our team.",
           photo: "https://www.principalconnections.ie/wp-content/uploads/2021/10/AdobeStock_211651253_businessman-croped-500x500-1.jpeg"
         },
         {
           id: 8,
           name: "Emily Chen",
           title: "Marketing Specialist",
-          bio: "Emily has a background in digital marketing and a passion for...",
+          bio: "Emily is a talented marketing professional with a background in digital marketing and a true passion for creating impactful campaigns. With her expertise in online marketing strategies and platforms, she brings a fresh and innovative approach to our marketing initiatives. Emily is skilled in leveraging various digital channels to drive brand awareness, engage with target audiences, and generate leads. Her creativity and attention to detail shine through in her ability to develop compelling content and design visually appealing assets. Emily's analytical mindset allows her to measure the success of marketing campaigns and make data-driven optimizations for maximum results. She stays abreast of the latest trends in the digital marketing landscape, enabling her to adapt strategies and stay ahead of the competition. Emily's strong communication skills and collaborative nature make her a valuable asset in working with cross-functional teams and achieving marketing objectives. With her dedication and passion for delivering impactful marketing outcomes, Emily plays a crucial role in driving our brand's success.",
           photo: "https://www.spjain.org/hubfs/mumbai-lp-images/mgluxm-lp/About-the-program.jpg"
         },
         {
           id: 9,
           name: "David Kim",
           title: "Director of Operations",
-          bio: "David oversees our day-to-day operations and ensures that...",
+          bio: "David is a highly skilled professional who serves as our Director of Operations, overseeing the smooth functioning of our day-to-day business activities. With his extensive experience in operations management and a keen eye for process optimization, David plays a pivotal role in driving efficiency and productivity within our organization. He is responsible for streamlining workflows, implementing effective systems, and ensuring that operational goals are met. David's strategic mindset and problem-solving abilities enable him to identify areas for improvement and implement innovative solutions. His strong leadership skills and ability to motivate teams foster a positive work environment and facilitate collaboration. ",
           photo: "https://www.asian-identity.com/wp-content/uploads/2020/07/team-img-consultant-11.jpg"
         },
         {
           id: 10,
           name: "Anna Lee",
           title: "Legal Counsel",
-          bio: "Anna Lee is a seasoned legal counsel with over a decade of experience...",
+          bio: "Anna Lee is a seasoned legal counsel with over a decade of experience in the field. With a strong background in corporate law and a deep understanding of legal frameworks, Anna plays a vital role in providing sound legal advice and guidance to our organization. Her expertise covers a wide range of legal areas, including contract negotiation, compliance, intellectual property, and risk management. Anna's attention to detail and analytical mindset allow her to assess complex legal issues and develop effective strategies to mitigate risks. She is known for her strong communication skills and ability to explain legal concepts in a clear and concise manner. Anna's dedication to upholding legal standards and protecting the interests of our organization ensures that we operate within the boundaries of the law. Her commitment to providing practical and strategic legal solutions makes her an invaluable asset to our team.",
           photo: "https://media.licdn.com/dms/image/C4D03AQEuS75kxEy_uQ/profile-displayphoto-shrink_800_800/0/1550990573085?e=2147483647&v=beta&t=rxVwfLRqZgAZVWuV3-YPLB3nMC1kRKjGO2wCAAqbbtM"
         }
         
@@ -131,6 +131,70 @@ export default async (models) => {
             areas: "['Technology']",
             featured: false,
           },
+          {
+            id: 7,
+            title: 'Healthcare Data Analytics Platform',
+            shortDescription: 'A platform for analyzing and extracting insights from healthcare data',
+            longDescription: 'This project aims to develop a comprehensive healthcare data analytics platform. The platform will utilize advanced analytics techniques to analyze large volumes of healthcare data, enabling healthcare providers to extract valuable insights for decision-making and improving patient outcomes. The platform will adhere to data privacy regulations and emphasize data security. It will empower healthcare organizations to make informed decisions and enhance overall operational efficiency.',
+            supervisor: 7,
+            areas: "['Healthcare']",
+            featured: false,
+          },
+          {
+            id: 8,
+            title: 'Renewable Energy Solutions',
+            shortDescription: 'Developing sustainable and efficient renewable energy solutions',
+            longDescription: 'This project focuses on developing innovative renewable energy solutions to address the growing demand for sustainable and clean energy sources. The project will involve researching and implementing technologies such as solar power, wind energy, and energy storage systems. The goal is to provide scalable and efficient renewable energy solutions that contribute to reducing carbon emissions and promoting a greener future.',
+            supervisor: 1,
+            areas: "['Energy']",
+            featured: false,
+          },
+          {
+            id: 9,
+            title: 'AI-Powered Customer Service Chatbot',
+            shortDescription: 'Building an intelligent chatbot for enhanced customer service experience',
+            longDescription: 'This project aims to develop an AI-powered chatbot that can handle customer inquiries and provide assistance in an automated and efficient manner. The chatbot will utilize natural language processing and machine learning techniques to understand and respond to customer queries effectively. The goal is to improve customer service experience, reduce response times, and enhance customer satisfaction.',
+            supervisor: 3,
+            areas: "['Technology']",
+            featured: false,
+          },
+          {
+            id: 10,
+            title: 'Data-driven Personalized Medicine',
+            shortDescription: 'Developing personalized treatment approaches using data analytics',
+            longDescription: 'This project aims to leverage data analytics and machine learning techniques to develop personalized treatment approaches in the field of medicine. By analyzing patient data, genetic information, and medical records, the project seeks to identify patterns and correlations that can guide customized treatment plans for individuals. The goal is to improve treatment outcomes and optimize healthcare interventions based on each patient\'s unique characteristics and needs.',
+            supervisor: 7,
+            areas: "['Healthcare', 'Technology']",
+            featured: false,
+          },
+          {
+            id: 11,
+            title: 'Clean Energy Storage Solutions',
+            shortDescription: 'Developing advanced energy storage technologies for renewable energy',
+            longDescription: 'This project focuses on the development of advanced energy storage solutions to address the intermittency of renewable energy sources. The project aims to explore and implement innovative technologies such as battery systems, hydrogen storage, and compressed air energy storage. By improving energy storage efficiency and capacity, the project seeks to enhance the integration of renewable energy into the existing power grid and promote a more sustainable and reliable energy future.',
+            supervisor: 3,
+            areas: "['Energy', 'Technology']",
+            featured: false,
+          },
+          {
+            id: 12,
+            title: 'Intelligent Virtual Assistants',
+            shortDescription: 'Building AI-powered virtual assistants for enhanced user experiences',
+            longDescription: 'This project involves the development of intelligent virtual assistants that can interact with users and provide personalized assistance across various domains. Leveraging natural language processing and machine learning, the virtual assistants aim to understand user queries, perform tasks, and offer relevant recommendations. The project focuses on creating seamless user experiences and empowering users with convenient and efficient virtual assistant interactions.',
+            supervisor: 1,
+            areas: "['Technology']",
+            featured: false,
+          },
+          {
+            id: 13,
+            title: 'Blockchain-based Supply Chain Transparency',
+            shortDescription: 'Implementing blockchain technology to enhance supply chain transparency',
+            longDescription: 'This project aims to leverage blockchain technology to improve supply chain transparency and traceability. By utilizing distributed ledger technology, the project seeks to create a tamper-proof and transparent system for tracking goods and verifying transactions throughout the supply chain. The project focuses on enhancing trust, reducing counterfeiting, and enabling greater visibility into the movement of goods across multiple stakeholders.',
+            supervisor: 5,
+            areas: "['Technology']",
+            featured: false,
+          },
+        
     ]
     const areaModel = [
       {

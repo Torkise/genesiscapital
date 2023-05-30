@@ -4,12 +4,9 @@
         <h1 class="project-title">
             {{ project.title }}
         </h1>
-        <div class="title-box">
-            Managing Partner
-        </div>
         <div class="project-content">
             <p v-html="project.longDescription"></p>
-            <img :src="employee.photo" alt="">
+            <img src="https://images.pexels.com/photos/6153354/pexels-photo-6153354.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="">
         </div>
 
         <div class="links-container">
@@ -61,14 +58,6 @@
     position: relative;
 }
 
-.title-box {
-    position: relative;
-    background-color: #FF7A00;
-    width: fit-content;
-    color: white;
-    padding: 0.3rem;
-    border-radius: 5%;
-}
 
 .project-content {
     display: flex;
@@ -81,7 +70,9 @@
 }
 
 .project-content img {
-    max-width: 25vw;
+    max-width: 35vw;
+    margin-right: 4rem;
+    margin-left: 2rem;
 }
 
 .links-container {
@@ -108,6 +99,7 @@
 
 .project-areas {
     padding-right: 1rem;
+    padding-left: 1rem;
     border-radius: 1rem 1rem 1rem 1rem;
     color: #fff;
     cursor: pointer;
