@@ -1,6 +1,6 @@
 <template>
     <div class="contact">
-      <h1 class="page-title">Contact Us</h1>
+      <PageTitle title="Contact Us"/>
       <p>If you have any questions or would like to discuss a potential investment opportunity, please feel free to contact us:</p>
       <ul>
         <li>Email: info@genesiscapital.com</li>
@@ -23,13 +23,10 @@
       min-height: 100vh;
       display: flex;
       flex-direction: column;
-      padding: 8rem;
       grid-gap: 20px;
     }
     .social-media {
       display: flex;
-      /* justify-content: center; */
-      /* align-items: center; */
       margin-top: 2rem;
     }
     .social-media img {

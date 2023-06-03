@@ -18,7 +18,7 @@
 
 <template>
     <div class="areas">
-      <h1 class="page-title">Our Fields of Interest</h1>
+      <PageTitle title="Our Fields of Interest"/>
       <section id="general" class="area-section">
         <p>In Genesis Capital, we are committed to investing in innovative and high-growth potential startups that are poised to make a significant impact in their respective industries. On this page, we provide an overview of the areas in which we invest and the types of businesses we are looking to support. Whether you are an entrepreneur seeking funding for your startup or an investor interested in learning more about our investment strategy, we hope this page provides valuable insights into our focus and approach.</p>
       </section>
@@ -42,7 +42,6 @@
       min-height: 100vh;
       display: flex;
       flex-direction: column;
-      padding-left: 2rem;
       margin-right: 2rem;
     }
 
@@ -69,6 +68,5 @@
     .areas-box img:hover {
       transform: scale(1.2);
     }
-
   </style>
   

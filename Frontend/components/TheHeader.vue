@@ -18,7 +18,7 @@
 header {
     padding: 0px 20px 0px 20px;
     margin-bottom: 5px;
-    background-color: aliceblue;
+    background-color: mintcream;
     display: flex;
     justify-content: center;
     align-items: center;
