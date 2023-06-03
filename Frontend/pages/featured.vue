@@ -1,5 +1,5 @@
 <template>
-    <h1 class="featured-title">Our Featured Projects</h1>
+    <PageTitle title="Our Featured Projects"/>
     <p class="featured-text">Combining cutting-edge technology, unparalleled expertise, and a passion for innovation,
          our featured project is poised to transform our world. It brings together the brightest
           minds and boldest ideas to tackle the industry's most pressing challenges head-on.
@@ -47,24 +47,8 @@ Through our strategic investment and unwavering support, we have helped catalyze
 
 <style>
 
-body {
-    padding-left: 2rem;
-}
 
-hr {
-    border-top: 1.5px solid ;
-    color: #FF7A00;
-    margin-left: 2rem;
-    margin-right: 2rem;
-    margin-bottom: 1rem;
-    opacity: 50%;
-}
 
-.featured-title {
-    font-size: xx-large;
-    border-bottom: 2px solid #FF7A00;
-    position: relative;
-}
 
 .featured-text {
     font-size: large;
@@ -78,6 +62,7 @@ hr {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 50px;
     margin-bottom: 6rem;
+    margin-left: 5vw;
 }
 
 .featured-project-title {

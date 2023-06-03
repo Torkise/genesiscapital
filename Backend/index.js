@@ -43,7 +43,13 @@ async function initDB() {
         description: {
             type: DataTypes.STRING,
             allowNull: true
+        }, 
+        photo: {
+            type: DataTypes.STRING,
+            allowNull: false
         }
+
+
     })
     models.Project = db.define('project', {
         id: {
