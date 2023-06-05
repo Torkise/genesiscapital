@@ -72,4 +72,5 @@ export default defineNuxtComponent({
     max-width: 25vw;
     border-radius: 25%;
     margin-right: 2rem;
-}</style>
+}
+</style>
