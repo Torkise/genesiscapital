@@ -31,7 +31,7 @@ export default defineNuxtComponent({
       </div>
     </div>
   </div>
-</div></template>
+</template>
   
 <style>
 .projects {
