@@ -11,7 +11,7 @@ export default defineNuxtComponent({
 </script>
 <template>
   <div class="projects">
-    <h1>A Look into Our Investments</h1>
+    <PageTitle title="A Look into Our Investments" />
     <p>Welcome to Genesis Capital Projects page, where you can discover the latest investment opportunities and innovative
       startups we are backing. Our team of experienced professionals is dedicated to identifying and supporting the most
       promising ventures across a variety of sectors. Explore our portfolio and learn more about the exciting new
@@ -31,7 +31,7 @@ export default defineNuxtComponent({
       </div>
     </div>
   </div>
-</template>
+</div></template>
   
 <style>
 .projects {
@@ -41,11 +41,6 @@ export default defineNuxtComponent({
   grid-gap: 20px;
 }
 
-.projects h1 {
-  font-size: xx-large;
-  border-bottom: 2px solid #FF7A00;
-  position: relative;
-}
 
 .project-list {
   display: flex;

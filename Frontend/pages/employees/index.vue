@@ -1,6 +1,6 @@
 <template>
   <div class="meet-the-employees">
-    <h1>Meet the experts</h1>
+    <PageTitle title="Meet the experts"/>
     <p class="page-text">Our company is proud to have a team of highly skilled and experienced professionals. Each of our employees brings unique expertise and perspectives to the table, allowing us to provide the best possible service to our clients. Get to know our team members below:</p>
     <br>
     <div class="employees-list">
@@ -35,12 +35,6 @@
   flex-direction: column;
 }
 
-.meet-the-employees h1 {
-    font-size: xx-large;
-    border-bottom: 2px solid #FF7A00;
-    position: relative;
-}
-
 .employees-list {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(25vh, 1fr));
@@ -48,7 +42,7 @@
 }
 
 .employee-card {
-  background-color:aliceblue;
+  background-color:mintcream;
   transition: all 0.3s cubic-bezier(.25,.8,.25,1);
   padding: 20px;
   border-radius: 5px;

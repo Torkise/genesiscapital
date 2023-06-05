@@ -11,11 +11,10 @@
 <style>
     footer
     {
-        background-color: aliceblue;
+        background-color: mintcream;
         flex-shrink: 0;
         text-align: center;
         margin-top: auto;
-        border-top: 5px solid aliceblue;
         padding: 10px;
 
         min-height: 1vh;

@@ -1,6 +1,5 @@
 <template>
   <HomePageImage />
-  <!-- <img src="https://images.pexels.com/photos/433308/pexels-photo-433308.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"/> -->
   <div class="home">
     <h1>Welcome to Genesis Capital</h1>
     <p>Welcome to Venture Capital, where we are passionate about supporting visionary entrepreneurs with game-changing ideas. Our mission is to help turn your bold ideas into successful businesses by providing the capital, resources, and expertise you need to grow.</p>
