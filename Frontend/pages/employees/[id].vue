@@ -9,44 +9,42 @@
                 <p>{{ employee.bio }}</p>
                 <img class="employee-page-img" :src="employee.photo">
             </div>
-            <div class = "project-box">
-                    <h1>Supervises The Following Projects: </h1>
-                    <div v-for="(project, index) in projects" :key="index">
-                        <NuxtLink :to="'/projects/' + project.id ">
-                        <li>
-                            {{ project.title }}
-                        </li>
-                        </NuxtLink>
-                    </div>
-            </div>    
+            <project-box :title="'Supervises The Following Projects:'" :projects="projects" />
         </div>
     </div>
 </template>
 
+
 <script>
-    export default defineNuxtComponent({
-        async asyncData() {
-            const route = useRoute()
-            const employeePromise = $fetch(useRuntimeConfig().public.serverURL + '/employees/' + route.params.id)
-            const projectsPromise = $fetch(useRuntimeConfig().public.serverURL + '/projects/supervisor=' + route.params.id)
-            
-            const [employee, projects] = await Promise.all([employeePromise, projectsPromise])
-            
-            return {
-                employee,
-                projects
-            }
+import ProjectBox from '@/components/ProjectBox.vue';
+
+
+export default defineNuxtComponent({
+    async asyncData() {
+        const route = useRoute()
+        const employeePromise = $fetch(useRuntimeConfig().public.serverURL + '/employees/' + route.params.id)
+        const projectsPromise = $fetch(useRuntimeConfig().public.serverURL + '/projects/supervisor=' + route.params.id)
+
+
+        const [employee, projects] = await Promise.all([employeePromise, projectsPromise])
+
+
+        return {
+            employee,
+            projects
+        }
     }
 })
+
+
 </script>
 
+
 <style>
-
-
-
 .employee-page {
-  height: 100vh;
+    height: 100vh;
 }
+
 
 .employee-title {
     background-color: #FF7A00;
@@ -56,36 +54,42 @@
     padding-right: 0.5rem;
 }
 
+
 .employee-page h1 {
     font-size: xx-large;
     border-bottom: 2px solid #FF7A00;
     position: relative;
 }
 
+
 .employee-content {
     display: flex;
     flex-direction: row;
 }
 
-.employee-content p{
+
+.employee-content p {
     padding-right: 2rem;
     font-size: large;
 }
 
-.employee-content img{
+
+.employee-content img {
     max-width: 25vw;
     border-radius: 25%;
     margin-right: 2rem;
 }
 
+
 .project-box {
-  position: relative;
-  margin-top: 20px;
-  padding: 10px;
-  background-color: rgba(255, 122, 0, 0.1);
-  border-radius: 60px;
-  max-width: 40%;
+    position: relative;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: rgba(255, 122, 0, 0.1);
+    border-radius: 60px;
+    max-width: 40%;
 }
+
 
 .project-box h1 {
     color: #00bd7e;
@@ -95,14 +99,16 @@
 }
 
 
+
+
 .project-box li {
     cursor: pointer;
     margin-left: 2rem;
     margin-bottom: 1rem;
 }
 
-.project-box li:hover{
+
+.project-box li:hover {
     color: blue;
 }
-
 </style>
