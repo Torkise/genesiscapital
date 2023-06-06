@@ -33,6 +33,7 @@
 .meet-the-employees {
   display: flex;
   flex-direction: column;
+  padding-left: 2rem;
 }
 
 .employees-list {

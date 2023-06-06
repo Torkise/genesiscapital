@@ -33,13 +33,14 @@ export default defineNuxtComponent({
   </div>
 </template>
   
-<style>
-.projects {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  grid-gap: 20px;
-}
+  <style>
+    .projects {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      grid-gap: 20px;
+      padding-left: 2rem;
+    }
 
 
 .project-list {

@@ -37,15 +37,15 @@ export default defineNuxtComponent({
   </div>
 </template>
   
+  <style>
+    .areas {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      margin-right: 2rem;
+      padding-left: 2rem;
+    }
 
-
-<style>
-.areas {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  margin-right: 2rem;
-}
 
 .areas-box {
   display: flex;

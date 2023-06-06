@@ -41,7 +41,8 @@ export default defineNuxtComponent({
 
 <style>
 .employee-page {
-    height: 100vh;
+  height: 100vh;
+  padding-left: 2rem;
 }
 
 .employee-title {
