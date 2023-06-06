@@ -1,9 +1,12 @@
 <template>
-    <div class="areas">
-        <h1> {{ area.name }} </h1>
-        <div v-html="area.description"></div>
-        <project-box :title="'Current Projects in this area:'" :projects="projects" />
-    </div>
+    <container>
+        <div class="areas">
+            <pagetitle> {{ area.name }} </pagetitle>
+            <div><normal-text>{{ area.description }}</normal-text>
+                <project-box :title="'Current Projects in this area:'" :projects="projects" />
+            </div>
+        </div>
+    </container>
 </template>
 
 
@@ -28,17 +31,16 @@ export default defineNuxtComponent({
 
 
 <style>
-.areas {
+/* .areas {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     grid-gap: 20px;
     padding-left: 8rem;
-}
+} */
 
-.areas h1 {
-    font-size: xx-large;
+/* .areas h1 {
     border-bottom: 2px solid #FF7A00;
     position: relative;
-}
+} */
 </style>

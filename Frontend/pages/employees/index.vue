@@ -1,22 +1,26 @@
 <template>
-  <div class="meet-the-employees">
-    <PageTitle title="Meet the experts" />
-    <p class="page-text">Our company is proud to have a team of highly skilled and experienced professionals. Each of our
-      employees brings unique expertise and perspectives to the table, allowing us to provide the best possible service to
-      our clients. Get to know our team members below:</p>
-    <br>
-    <div class="employees-list">
-      <div v-for="employee in employees" :key="employee.id">
-        <NuxtLink :to="'/employees/' + employee.id">
-          <div class="employee-card">
-            <img class="employee-img" :src="employee.photo">
-            <h2>{{ employee.name }}</h2>
-            <h3>{{ employee.title }}</h3>
-          </div>
-        </NuxtLink>
+  <container>
+    <div class="meet-the-employees">
+      <pagetitle>Meet the experts</pagetitle>
+      <p class="page-text">Our company is proud to have a team of highly skilled and experienced professionals. Each of
+        our
+        employees brings unique expertise and perspectives to the table, allowing us to provide the best possible service
+        to
+        our clients. Get to know our team members below:</p>
+      <br>
+      <div class="employees-list">
+        <div v-for="employee in employees" :key="employee.id">
+          <NuxtLink :to="'/employees/' + employee.id">
+            <div class="employee-card">
+              <img class="employee-img" :src="employee.photo">
+              <h2>{{ employee.name }}</h2>
+              <h3>{{ employee.title }}</h3>
+            </div>
+          </NuxtLink>
+        </div>
       </div>
     </div>
-  </div>
+  </container>
 </template>
 
 <script>
@@ -32,10 +36,10 @@ export default defineNuxtComponent({
 })
 </script>
 <style>
-.meet-the-employees {
+/* .meet-the-employees {
   display: flex;
   flex-direction: column;
-}
+} */
 
 .employees-list {
   display: grid;

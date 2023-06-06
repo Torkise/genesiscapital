@@ -4,7 +4,7 @@
         <nav>
             <NuxtLink to="/">Home</NuxtLink>
             <NuxtLink to="/featured">Featured projects</NuxtLink>
-            <NuxtLink to="/employees">Employyes</NuxtLink>
+            <NuxtLink to="/employees">Employees</NuxtLink>
             <NuxtLink to="/projects">Projects</NuxtLink>
             <NuxtLink to="/areas">Areas</NuxtLink>
             <NuxtLink to="/about">About Us</NuxtLink>
@@ -28,18 +28,17 @@ header {
 nav {
     display: flex;
     gap: 15px;
-    font-size: 10pt;
-    font-weight: bold;
+    font-size: 1rem;
 }
 
 /* Example styling for the links in the nav bar */
 nav a {
-    color: navy;
+    color: #00BD7E;
     text-decoration: none;
 }
 
 nav a:hover {
-    color: darkblue;
+    color: #000000;
     text-decoration: underline;
 }
 
