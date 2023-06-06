@@ -2,13 +2,13 @@
     <header>
         <img alt="Vue logo" class="logo" src="@/assets/logo.svg" />
         <nav>
-            <NuxtLink to="/">HOME</NuxtLink>
-            <NuxtLink to="/featured">FEATURED PROJECTS</NuxtLink>
-            <NuxtLink to="/employees">EMPLOYEES</NuxtLink>
-            <NuxtLink to="/projects">PROJECTS</NuxtLink>
-            <NuxtLink to="/areas">AREAS</NuxtLink>
-            <NuxtLink to="/about">ABOUT US</NuxtLink>
-            <NuxtLink to="/contact">CONTACT US</NuxtLink>
+            <NuxtLink to="/">Home</NuxtLink>
+            <NuxtLink to="/featured">Featured projects</NuxtLink>
+            <NuxtLink to="/employees">Employyes</NuxtLink>
+            <NuxtLink to="/projects">Projects</NuxtLink>
+            <NuxtLink to="/areas">Areas</NuxtLink>
+            <NuxtLink to="/about">About Us</NuxtLink>
+            <NuxtLink to="/contact">Contact Us</NuxtLink>
         </nav>
     </header>
 </template>
@@ -17,7 +17,7 @@
 header {
     padding: 0px 20px 0px 20px;
     margin-bottom: 5px;
-    background-color: #FFFFFF;
+    background-color: white;
     display: flex;
     justify-content: center;
     align-items: center;
