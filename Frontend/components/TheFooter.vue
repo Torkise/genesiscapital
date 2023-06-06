@@ -9,14 +9,13 @@
 </template>
 
 <style>
-    footer
-    {
-        background-color: mintcream;
-        flex-shrink: 0;
-        text-align: center;
-        margin-top: auto;
-        padding: 10px;
+footer {
+    background-color: rgba(55, 71, 79, 0.3);
+    flex-shrink: 0;
+    text-align: center;
+    margin-top: auto;
+    padding: 10px;
 
-        min-height: 1vh;
-    }
+    min-height: 1vh;
+}
 </style>

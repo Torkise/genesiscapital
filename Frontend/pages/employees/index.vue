@@ -1,7 +1,9 @@
 <template>
   <div class="meet-the-employees">
-    <PageTitle title="Meet the experts"/>
-    <p class="page-text">Our company is proud to have a team of highly skilled and experienced professionals. Each of our employees brings unique expertise and perspectives to the table, allowing us to provide the best possible service to our clients. Get to know our team members below:</p>
+    <PageTitle title="Meet the experts" />
+    <p class="page-text">Our company is proud to have a team of highly skilled and experienced professionals. Each of our
+      employees brings unique expertise and perspectives to the table, allowing us to provide the best possible service to
+      our clients. Get to know our team members below:</p>
     <br>
     <div class="employees-list">
       <div v-for="employee in employees" :key="employee.id">
@@ -18,16 +20,16 @@
 </template>
 
 <script>
-    export default defineNuxtComponent({
-        async asyncData() {
-            // useRuntimeConfig provide us with environment variables set up in the nuxtconfig file
-            const employees = await $fetch(useRuntimeConfig().public.serverURL + '/employees')
+export default defineNuxtComponent({
+  async asyncData() {
+    // useRuntimeConfig provide us with environment variables set up in the nuxtconfig file
+    const employees = await $fetch(useRuntimeConfig().public.serverURL + '/employees')
 
-            return {
-                employees
-            }
-        }
-    })
+    return {
+      employees
+    }
+  }
+})
 </script>
 <style>
 .meet-the-employees {
@@ -42,8 +44,8 @@
 }
 
 .employee-card {
-  background-color:mintcream;
-  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+  background-color: #FFFFFF;
+  transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
   padding: 20px;
   border-radius: 5px;
   text-align: center;
