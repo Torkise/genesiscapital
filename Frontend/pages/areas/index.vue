@@ -43,9 +43,9 @@
       display: flex;
       flex-direction: column;
       margin-right: 2rem;
+      padding-left: 2rem;
     }
 
-   
 
     .areas-box {
       display: flex;

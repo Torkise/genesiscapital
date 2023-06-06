@@ -12,6 +12,7 @@
       display: flex;
       flex-direction: column;
       grid-gap: 20px;
+      padding-left: 2rem;
     }
     .social-media {
       display: flex;

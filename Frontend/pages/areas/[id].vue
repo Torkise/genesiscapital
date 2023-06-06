@@ -1,7 +1,9 @@
 <template>
-    <h1> {{ area.name }}</h1>
-    <div v-for="project in projects" :key="project.id">
-      <h2>{{ project.title }}</h2>
+    <div style="padding-left: 2rem;">
+        <h1> {{ area.name }}</h1>
+        <div v-for="project in projects" :key="project.id">
+            <h2>{{ project.title }}</h2>
+        </div>
     </div>
 </template>
 <script>

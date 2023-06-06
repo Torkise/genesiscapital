@@ -52,6 +52,10 @@
 
 <style>
 
+.project-div {
+    padding-left: 2rem;
+}
+
 .project-title {
     font-size: xx-large;
     border-bottom: 2px solid #FF7A00;
