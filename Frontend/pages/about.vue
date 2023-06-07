@@ -8,16 +8,3 @@
     </div>
   </container>
 </template>
-  
-<style>
-.social-media {
-  display: flex;
-  margin-top: 2rem;
-}
-
-.social-media img {
-  margin: 0 1rem;
-  height: 2rem;
-}
-</style>
-  

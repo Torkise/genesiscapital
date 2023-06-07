@@ -1,34 +1,51 @@
-<!--
-    Default layout used by all the page
--->
 <template>
     <div class='page'>
-        <TheHeader />
+        <TheHeader @toggle-sidebar="toggleSidebar" />
+        <Sidebar :is-open="isSidebarOpen" @close-sidebar="closeSidebar" />
         <slot />
         <TheFooter />
     </div>
 </template>
+  
+<script>
+import TheHeader from "@/components/TheHeader.vue";
+import TheFooter from "@/components/TheFooter.vue";
+import Sidebar from "@/components/Sidebar.vue";
 
+export default {
+    components: {
+        TheHeader,
+        TheFooter,
+        Sidebar
+    },
+    data() {
+        return {
+            isSidebarOpen: false
+        };
+    },
+    methods: {
+        toggleSidebar() {
+            this.isSidebarOpen = !this.isSidebarOpen;
+        },
+        closeSidebar() {
+            this.isSidebarOpen = false;
+        }
+    }
+};
+</script>
+  
 <style>
 .page {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    background-color: #FFFFFF;
+    background-color: #ffffff;
     margin: 0 auto;
     font-family: "Graphik Web", Arial, sans-serif;
     font-size: 1rem;
 }
 
-/* h1 {
-    font-weight: 500;
-    font-size: 4rem;
-    margin: 4rem 0 2rem;
-    color: #00BD7E;
-    font-family: "Recoleta", serif;
-} */
-
-container {
+.container {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -43,11 +60,10 @@ pagetitle {
     font-weight: bold;
     margin: 2rem 0 2rem;
     color: #000000;
-    border-bottom: 2px solid #FF7A00;
+    border-bottom: 2px solid #ff7a00;
     position: relative;
     display: inline-block;
     width: 100%;
-
 }
 
 normal-text {
@@ -55,9 +71,7 @@ normal-text {
     font-weight: lighter;
 }
 
-
 /* Responsive Styles */
-
 @media screen and (max-width: 768px) {
     .container {
         padding: 0 1rem;
@@ -72,4 +86,4 @@ normal-text {
     }
 }
 </style>
-
+  

@@ -49,8 +49,7 @@ export default defineNuxtComponent({
   flex-wrap: wrap;
   justify-content: center;
   margin-top: 4rem;
-  margin-left: 16rem;
-  margin-right: 16rem;
+  padding: 0 1rem;
 }
 
 .areas-image-box {

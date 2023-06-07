@@ -37,6 +37,11 @@ export default defineNuxtComponent({
 </template>
   
 <style>
+.projects {
+  margin: 2rem auto;
+  max-width: 1200px;
+}
+
 .project-list {
   display: flex;
   flex-wrap: wrap;
@@ -44,8 +49,6 @@ export default defineNuxtComponent({
 }
 
 .project {
-  width: 30rem;
-  height: 10rem;
   padding: 2rem;
   border: 2px solid #ddd;
   transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
