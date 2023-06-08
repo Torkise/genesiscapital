@@ -55,6 +55,29 @@ container {
     align-items: center;
 }
 
+a {
+    color: #2D3E50;
+    text-decoration: none;
+    /* Remove the underline on links */
+}
+
+h2 {
+    line-height: 1.3;
+    font-family: "Recoleta", serif;
+    font-size: 1.5rem;
+    color: 2D3E50;
+    font-weight: bold;
+    margin-top: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+h3 {
+    line-height: 1.3;
+    font-family: "Recoleta", serif;
+    font-size: 1.5rem;
+    color: black;
+}
+
 pagetitle {
     font-family: "Recoleta", serif;
     font-size: 4rem;
@@ -75,6 +98,15 @@ pagetitle {
 p {
     line-height: 1.6;
     font-weight: lighter;
+}
+
+
+.gradient-text {
+    color: white;
+    /* Gradient background */
+    background: linear-gradient(45deg, #00BD7E, #2D3E50, #ff7a00);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 /* Responsive Styles */

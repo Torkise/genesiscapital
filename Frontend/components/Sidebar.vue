@@ -72,7 +72,6 @@ export default {
 
 .sidebar ul li a {
     color: #000;
-    text-decoration: none;
 }
 </style>
   

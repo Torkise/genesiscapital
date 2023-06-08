@@ -2,19 +2,21 @@
   <container>
     <div class="meet-the-employees">
       <pagetitle>Meet the experts</pagetitle>
-      <p class="page-text">Our company is proud to have a team of highly skilled and experienced professionals. Each of
-        our
-        employees brings unique expertise and perspectives to the table, allowing us to provide the best possible service
-        to
-        our clients. Get to know our team members below:</p>
-      <br>
+      <div class="employees-description">
+        <p class="page-text">Our company is proud to have a team of highly skilled and experienced professionals. Each of
+          our
+          employees brings unique expertise and perspectives to the table, allowing us to provide the best possible
+          service
+          to
+          our clients. Get to know our team members below:</p>
+      </div>
       <div class="employees-list">
         <div v-for="employee in employees" :key="employee.id">
           <NuxtLink :to="'/employees/' + employee.id">
             <div class="employee-card">
               <img class="employee-img" :src="employee.photo">
               <h2>{{ employee.name }}</h2>
-              <h3>{{ employee.title }}</h3>
+              <div>{{ employee.title }}</div>
             </div>
           </NuxtLink>
         </div>
@@ -36,15 +38,15 @@ export default defineNuxtComponent({
 })
 </script>
 <style>
-/* .meet-the-employees {
-  display: flex;
-  flex-direction: column;
-} */
-
 .employees-list {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(25vh, 1fr));
   grid-gap: 20px;
+}
+
+
+.employees-description {
+  margin-bottom: 8rem;
 }
 
 .employee-card {
@@ -54,11 +56,6 @@ export default defineNuxtComponent({
   border-radius: 5px;
   text-align: center;
   cursor: pointer;
-}
-
-.employee-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1), 0 5px 15px rgba(0, 0, 0, 0.07);
 }
 
 .employee-img {

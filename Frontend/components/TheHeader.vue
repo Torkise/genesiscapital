@@ -73,12 +73,14 @@ nav {
 /* Example styling for the links in the nav bar */
 nav a {
     color: #00BD7E;
-    text-decoration: none;
 }
 
 nav a:hover {
-    color: #000000;
-    text-decoration: underline;
+    color: white;
+    /* Gradient background */
+    background: linear-gradient(45deg, #00BD7E, #2D3E50, #ff7a00);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .menu-icon {
