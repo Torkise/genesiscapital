@@ -1,7 +1,7 @@
 <template>
     <container>
         <pagetitle>Our Featured Projects</pagetitle>
-        <p class="featured-text">Combining cutting-edge technology, unparalleled expertise, and a passion for innovation,
+        <p>Combining cutting-edge technology, unparalleled expertise, and a passion for innovation,
             our featured project is poised to transform our world. It brings together the brightest
             minds and boldest ideas to tackle the industry's most pressing challenges head-on.
             Through our strategic investment and unwavering support, we have helped catalyze the development

@@ -44,7 +44,6 @@ export default {
 <style>
 header {
     padding: 0px 20px 0px 20px;
-    margin-bottom: 5px;
     background-color: white;
     display: flex;
     justify-content: center;
@@ -94,8 +93,9 @@ nav a:hover {
 }
 
 .logo {
-    max-width: 100px;
+    height: 3rem;
     margin-right: 2rem;
+    margin-top: 1rem;
 }
 
 /* Hamburger Menu Styles */
@@ -103,7 +103,7 @@ nav a:hover {
     display: block;
     width: 25px;
     height: 3px;
-    background-color: #000;
+    background-color: #00BD7E;
     margin-bottom: 5px;
     transition: background-color 0.3s ease;
 }

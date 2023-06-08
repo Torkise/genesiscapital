@@ -37,11 +37,6 @@ export default defineNuxtComponent({
 </template>
   
 <style>
-.projects {
-  margin: 2rem auto;
-  max-width: 1200px;
-}
-
 .project-list {
   display: flex;
   flex-wrap: wrap;

@@ -2,6 +2,7 @@
     <div class='page'>
         <TheHeader @toggle-sidebar="toggleSidebar" />
         <Sidebar :is-open="isSidebarOpen" @close-sidebar="closeSidebar" />
+
         <slot />
         <TheFooter />
     </div>
@@ -45,7 +46,7 @@ export default {
     font-size: 1rem;
 }
 
-.container {
+container {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -58,22 +59,27 @@ pagetitle {
     font-family: "Recoleta", serif;
     font-size: 4rem;
     font-weight: bold;
-    margin: 2rem 0 2rem;
-    color: #000000;
-    border-bottom: 2px solid #ff7a00;
+    margin: 4rem 0 2rem;
+    color: #ffffff;
+    /* Set the font color to white */
     position: relative;
     display: inline-block;
     width: 100%;
+
+    /* Gradient background */
+    background: linear-gradient(45deg, #00BD7E, #2D3E50, #ff7a00);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
-normal-text {
-    line-height: 160%;
+p {
+    line-height: 1.6;
     font-weight: lighter;
 }
 
 /* Responsive Styles */
 @media screen and (max-width: 768px) {
-    .container {
+    container {
         padding: 0 1rem;
         /* Adjust the padding as needed */
     }
