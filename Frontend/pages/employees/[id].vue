@@ -1,7 +1,7 @@
 <template>
-    <div class="home-emp">
-        <div class="employee-page">
-            <h1>{{ employee.name }}</h1>
+    <container>
+        <content>
+            <pagetitle>{{ employee.name }}</pagetitle>
             <div class="employee-title">
                 <h3>{{ employee.title }}</h3>
             </div>
@@ -10,8 +10,8 @@
                 <img class="employee-page-img" :src="employee.photo">
             </div>
             <project-box :title="'Supervises The Following Projects:'" :projects="projects" />
-        </div>
-    </div>
+        </content>
+    </container>
 </template>
 
 
@@ -40,10 +40,9 @@ export default defineNuxtComponent({
 
 
 <style>
-.employee-page {
-  height: 100vh;
-  padding-left: 2rem;
-}
+/* .employee-page {
+    height: 100vh;
+} */
 
 .employee-title {
     background-color: #FF7A00;

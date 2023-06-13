@@ -10,39 +10,33 @@ export default defineNuxtComponent({
 })
 </script>
 <template>
-  <div class="projects">
-    <PageTitle title="A Look into Our Investments" />
-    <p>Welcome to Genesis Capital Projects page, where you can discover the latest investment opportunities and innovative
-      startups we are backing. Our team of experienced professionals is dedicated to identifying and supporting the most
-      promising ventures across a variety of sectors. Explore our portfolio and learn more about the exciting new
-      companies we are supporting.</p>
-    <div class="project-list">
-      <div v-for="project in projects" :key="project.id">
-        <div class="project">
-          <NuxtLink :to="'/projects/' + project.id">
-            <div class="project-area" :class="area.toLowerCase()" v-for="area in project.areas" :key="area">
-              {{ area }}
-            </div>
-            <h2>{{ project.title }}</h2>
-            <p>{{ project.shortDescription }}</p>
-            <p class="learnmore">Learn more...</p>
-          </NuxtLink>
+  <container>
+    <div class="projects">
+      <pagetitle>A Look into Our Investments</pagetitle>
+      <p>Welcome to Genesis Capital Projects page, where you can discover the latest investment opportunities and
+        innovative
+        startups we are backing. Our team of experienced professionals is dedicated to identifying and supporting the most
+        promising ventures across a variety of sectors. Explore our portfolio and learn more about the exciting new
+        companies we are supporting.</p>
+      <div class="project-list">
+        <div v-for="project in projects" :key="project.id">
+          <div class="project">
+            <NuxtLink :to="'/projects/' + project.id">
+              <div class="project-area" :class="area.toLowerCase()" v-for="area in project.areas" :key="area">
+                {{ area }}
+              </div>
+              <h2>{{ project.title }}</h2>
+              <p>{{ project.shortDescription }}</p>
+              <p class="learnmore">Learn more...</p>
+            </NuxtLink>
+          </div>
         </div>
       </div>
     </div>
-  </div>
+  </container>
 </template>
   
-  <style>
-    .projects {
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-      grid-gap: 20px;
-      padding-left: 2rem;
-    }
-
-
+<style>
 .project-list {
   display: flex;
   flex-wrap: wrap;
@@ -50,8 +44,6 @@ export default defineNuxtComponent({
 }
 
 .project {
-  width: 30rem;
-  height: 10rem;
   padding: 2rem;
   border: 2px solid #ddd;
   transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
@@ -105,4 +97,3 @@ export default defineNuxtComponent({
   color: #979797;
 }
 </style>
-  
