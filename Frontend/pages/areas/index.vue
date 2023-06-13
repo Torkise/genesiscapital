@@ -41,9 +41,7 @@ export default defineNuxtComponent({
   </container>
 </template>
   
-
-
-<style>
+  <style>
 .areas-box {
   display: flex;
   flex-wrap: wrap;

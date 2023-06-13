@@ -37,13 +37,13 @@ export default defineNuxtComponent({
   }
 })
 </script>
+
 <style>
 .employees-list {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(25vh, 1fr));
   grid-gap: 20px;
 }
-
 
 .employees-description {
   margin-bottom: 8rem;

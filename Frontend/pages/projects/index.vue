@@ -97,4 +97,3 @@ export default defineNuxtComponent({
   color: #979797;
 }
 </style>
-  
