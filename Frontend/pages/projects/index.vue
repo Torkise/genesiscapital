@@ -19,15 +19,15 @@ export default defineNuxtComponent({
         promising ventures across a variety of sectors. Explore our portfolio and learn more about the exciting new
         companies we are supporting.</p>
       <div class="project-list">
-        <div v-for="project in projects" :key="project.id">
+        <div v-for="(project, index) in projects" :key="project.id">
           <div class="project">
             <NuxtLink :to="'/projects/' + project.id">
               <div class="project-area" :class="area.toLowerCase()" v-for="area in project.areas" :key="area">
                 {{ area }}
               </div>
-              <h2>{{ project.title }}</h2>
-              <p>{{ project.shortDescription }}</p>
-              <p class="learnmore">Learn more...</p>
+              <h4>{{ project.title }}</h4>
+              <smalltext>{{ project.shortDescription }}</smalltext>
+              <p>Learn more...</p>
             </NuxtLink>
           </div>
         </div>
@@ -41,19 +41,21 @@ export default defineNuxtComponent({
   display: flex;
   flex-wrap: wrap;
   gap: 2rem;
+  margin-top: 4rem;
+  justify-content: center;
+  /* Center the content horizontally */
 }
 
 .project {
-  padding: 2rem;
-  border: 2px solid #ddd;
+  width: 19rem;
+  height: 19rem;
+  padding: 1rem 2rem 2rem 2rem;
   transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
-  border-radius: 5px;
-}
+  border-radius: 2rem;
+  box-sizing: border-box;
+  overflow: hidden;
+  background-color: #00bd7e1a;
 
-.project:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1), 0 5px 15px rgba(0, 0, 0, 0.07);
-  cursor: pointer;
 }
 
 .project-area {
@@ -89,11 +91,5 @@ export default defineNuxtComponent({
 
 .project p {
   font-size: 1rem;
-}
-
-.learnmore {
-  margin-top: 1rem;
-  margin-left: 0.5rem;
-  color: #979797;
 }
 </style>

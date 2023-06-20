@@ -78,6 +78,19 @@ h3 {
     color: black;
 }
 
+bluebutton {
+    border: 0;
+    background: #2D3E50;
+    text-align: center;
+    font-size: 1rem;
+    color: #ffffff;
+    border-radius: 4rem;
+    font-weight: bolder;
+    transition: background-color 0.25s ease-out, scale 0.1s ease-out;
+    display: inline-block;
+    padding: 0.5rem 1rem;
+}
+
 pagetitle {
     font-family: "Recoleta", serif;
     font-size: 4rem;
@@ -95,9 +108,23 @@ pagetitle {
     -webkit-text-fill-color: transparent;
 }
 
+h4 {
+    line-height: 1.3;
+    font-family: "Recoleta", serif;
+    font-size: 1.5rem;
+    font-weight: lighter;
+    margin-bottom: 0.5rem;
+    color: black;
+}
+
 p {
     line-height: 1.6;
     font-weight: lighter;
+}
+
+smalltext {
+    font-weight: lighter;
+    font-size: small;
 }
 
 
