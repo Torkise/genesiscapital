@@ -35,7 +35,7 @@ export default {
     padding: 10px;
     background-color: rgba(255, 122, 0, 0.1);
     border-radius: 60px;
-    max-width: 40%;
+    max-width: 50%;
 }
 
 

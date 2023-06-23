@@ -2,8 +2,12 @@
     <container>
         <div class="areas">
             <pagetitle> {{ area.name }} </pagetitle>
-            <div><normal-text>{{ area.description }}</normal-text>
-                <project-box :title="'Current Projects in this area:'" :projects="projects" />
+            <div class = "area-content">
+                <div>
+                    <normal-text>{{ area.description }}</normal-text>
+                    <project-box :title="'Current Projects in this area:'" :projects="projects" />
+                </div>
+                <img :src="area.photo">
             </div>
         </div>
     </container>
@@ -31,16 +35,16 @@ export default defineNuxtComponent({
 
 
 <style>
-/* .areas {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    grid-gap: 20px;
-    padding-left: 8rem;
-} */
 
-/* .areas h1 {
-    border-bottom: 2px solid #FF7A00;
-    position: relative;
-} */
+.area-content {
+    display: flex;
+    flex-direction: row;
+}
+
+.area-content img {
+    width: 30vw;
+    height: 30vw;
+    border-radius: 25%;
+    opacity: 0.4;
+}
 </style>
