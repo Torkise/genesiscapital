@@ -6,9 +6,9 @@
 
 <script>
     export default {
-        props: [
-            'title'
-        ]
+        props: {
+            title: String
+        }
     }
 </script>
 
@@ -18,6 +18,7 @@
         font-size: xx-large;
         border-bottom: 2px solid #FF7A00;
         position: relative;
+
     }
 
 </style>
