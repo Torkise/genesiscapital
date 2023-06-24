@@ -44,7 +44,7 @@ async function initDB() {
             type: DataTypes.STRING,
             allowNull: true
         }, 
-        photo: {
+        mainphoto: {
             type: DataTypes.STRING,
             allowNull: false
         }

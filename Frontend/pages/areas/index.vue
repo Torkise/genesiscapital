@@ -12,6 +12,12 @@ export default defineNuxtComponent({
     return {
       areas
     }
+  },
+  computed: {
+    imagesPerRow() {
+      const desiredImagesPerRow = 4; 
+      return Math.floor(this.totalAreas / desiredImagesPerRow) * desiredImagesPerRow;
+    }
   }
 })
 </script>
@@ -32,7 +38,7 @@ export default defineNuxtComponent({
       <div class="areas-box">
         <div class="areas-image-box" v-for="area in areas">
           <NuxtLink :to="'/areas/' + area.id">
-            <img :src="area.photo">
+            <img :src="area.mainphoto">
           </NuxtLink>
         </div>
       </div>
@@ -64,5 +70,6 @@ export default defineNuxtComponent({
 .areas-box img:hover {
   transform: scale(1.2);
 }
+
 </style>
   

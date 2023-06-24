@@ -55,4 +55,11 @@ export default {
 .project-box li:hover {
     color: blue;
 }
+
+@media screen and (max-width: 768px) {
+    .project-box {
+        max-width: 100%;
+    }   
+    
+}
 </style>
