@@ -100,8 +100,12 @@ export default defineNuxtComponent({
 
 @media (max-width: 768px) {
   .project-list {
-    margin-right: 2rem;
-    margin-left: 2rem;
+    margin-top: 2rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
+    gap: 1rem;
+
+
   }
 
   .project {
@@ -121,6 +125,7 @@ export default defineNuxtComponent({
 
   h4 {
     margin-top: 0;
+    font-size: 1.2rem;
   }
 }
 </style>
