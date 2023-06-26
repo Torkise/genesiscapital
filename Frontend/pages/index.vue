@@ -1,7 +1,7 @@
 <template>
   <HomePageImage />
   <div class="home">
-    <h1>Welcome to Genesis Capital</h1>
+    <pagetitle>Welcome to Genesis Capital</pagetitle>
     <p>Welcome to Venture Capital, where we are passionate about supporting visionary entrepreneurs with game-changing ideas. Our mission is to help turn your bold ideas into successful businesses by providing the capital, resources, and expertise you need to grow.</p>
   </div>
   <div class="section">
@@ -15,51 +15,143 @@
     </div>
   </div>
   <div class="section">
-    <div class="content">
-      <p>If you're an entrepreneur with a groundbreaking idea, we invite you to learn more about how we can support you on your journey. We're always on the lookout for the next big thing, and we're proud to partner with some of the industry's most innovative and visionary entrepreneurs.</p>
-      <NuxtLink to="/areas/"><button>Learn More</button></NuxtLink>
-    </div>
     <div class="image-wrapper">
       <img src="https://thumbs.dreamstime.com/b/technology-logo-tech-firm-logo-vector-design-full-vector-template-technology-logo-tech-firm-logo-vector-design-full-vector-109273835.jpg" alt="Employees Photo">
+    </div>
+    <div class="content">
+      <p>Discover the future through our funded projects. At Genesis Capital, we fuel innovation and support groundbreaking ventures that redefine industries. With a diverse portfolio spanning technology, healthcare, sustainability, and more, we empower visionary entrepreneurs to make a lasting impact. Join us as we shape tomorrow. Explore our website for details on our funded projects and investment opportunities.</p>
+      <NuxtLink to="/areas/"><button>Learn More</button></NuxtLink>
     </div>
   </div>
 </template>
 
 <style>
 
+
+.home p {
+  font-size: 28px;
+  font-family: Poppins;
+  color: #333;
+  margin-bottom: 2rem;
+  margin-left: 80px;
+  margin-right: 190px;
+}
+@media (max-width: 768px) {
+  .home p {
+    font-size: 25px;
+    margin-right: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .home p {
+    margin-right: 10px;
+    font-size: 15px;
+  }
+}
+
+/* Updated styles for small screens */
+
+@media (max-width: 768px) {
   .section {
-    display: flex;
-    justify-content: center;
-    background-color: #f2f2f2;
-    padding: 3rem;
-    color: #000000;
+    flex-direction: column-reverse;
   }
 
-  .image-wrapper {
-    overflow: hidden;
+  .section .image-wrapper {
+    margin-top: 2rem;
   }
+}
 
-  .image-wrapper img {
-    width: 100%;
-    border-radius: 50px;
+.section {
+  display: flex;
+  justify-content: center;
+  background-color: #f2f2f2;
+  padding: 3rem;
+  margin: 100px;
+  color: #000000;
+  border-radius: 20px;
+}
+
+@media (max-width: 768px) {
+  .section {
+    margin: 20px;
   }
+}
 
+.section h3 {
+  color: #FF7A00;
+  font-size: 30px;
+  font-family: Poppins;
+  margin-left: 5px;
+}
+
+@media (max-width: 768px) {
+  .section h3 {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .section h3 {
+    font-size: 15px;
+  }
+}
+
+.section p {
+  font-size: 28px;
+  font-family: Poppins;
+  color: #333;
+  margin-bottom: 2rem;
+  margin-left: 5px;
+  margin-right: 10px;
+}
+
+@media (max-width: 768px) {
+  .section p {
+    font-size: 19px;
+  }
+}
+
+@media (max-width: 480px) {
+  .section p {
+    font-size: 15px;
+  }
+}
+
+.image-wrapper {
+  overflow: hidden;
+}
+
+.image-wrapper img {
+  width: 100%;
+  border-radius: 50px;
+}
+
+.content {
+  flex: 0 0 50%;
+  padding: 4rem;
+}
+
+@media (max-width: 768px) {
   .content {
-    flex: 0 0 50%;
-    padding: 4rem;
+    flex: 50 1 80%;
+    flex-direction: column;
   }
+}
 
-  .section button {
-    margin-top: 1rem;
-    padding: 0.5rem 1rem;
-    border: 0;
-    background-color: hsla(160, 100%, 37%, 1);
-    color: #000000;
-    cursor: pointer;
-    border-radius: 5px;
-  }
+.section button {
+  margin-top: 1rem;
+  font-size: 20px;
+  font-family: Poppins;
+  padding: 0.5rem 1rem;
+  border: 0;
+  background-color: hsla(160, 100%, 37%, 1);
+  color: #000000;
+  cursor: pointer;
+  border-radius: 20px;
+}
 
-  .section button:hover {
-    background-color: rgb(0, 141, 94);
-  }
+.section button:hover {
+  background-color: rgb(108, 112, 111);
+}
 </style>

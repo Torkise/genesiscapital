@@ -42,9 +42,10 @@ export default {
 
 
 <style>
+
 header {
-    padding: 0px 20px 0px 20px;
-    background-color: white;
+    padding: 0px 40px 0px 20px;
+    background-color: rgb(34, 34, 34);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -65,8 +66,8 @@ header {
 nav {
     display: flex;
     align-items: center;
-    gap: 15px;
-    font-size: 1rem;
+    gap: 25px;
+    font-size: 1.3rem;
 
 }
 
@@ -95,9 +96,9 @@ nav a:hover {
 }
 
 .logo {
-    height: 3rem;
+    height: 5rem;
     margin-right: 2rem;
-    margin-top: 1rem;
+    margin-top: 0.3rem;
 }
 
 /* Hamburger Menu Styles */
