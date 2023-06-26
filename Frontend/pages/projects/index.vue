@@ -27,7 +27,9 @@ export default defineNuxtComponent({
               </div>
               <h4>{{ project.title }}</h4>
               <smalltext>{{ project.shortDescription }}</smalltext>
-              <p>Learn more...</p>
+              <div class="learn-more">
+                <smalltext>Learn more...</smalltext>
+              </div>
             </NuxtLink>
           </div>
         </div>
@@ -55,7 +57,10 @@ export default defineNuxtComponent({
   box-sizing: border-box;
   overflow: hidden;
   background-color: #00bd7e1a;
-
+  flex-direction: column;
+  /* Added */
+  justify-content: space-between;
+  /* Added */
 }
 
 .project-area {
@@ -89,7 +94,10 @@ export default defineNuxtComponent({
   margin-top: 0;
 }
 
-.project p {
-  font-size: 1rem;
+
+
+.learn-more {
+  font-style: italic;
+  margin-top: 1rem;
 }
 </style>
