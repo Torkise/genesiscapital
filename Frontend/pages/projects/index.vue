@@ -45,7 +45,6 @@ export default defineNuxtComponent({
   gap: 2rem;
   margin-top: 4rem;
   justify-content: center;
-  /* Center the content horizontally */
 }
 
 .project {
@@ -58,9 +57,7 @@ export default defineNuxtComponent({
   overflow: hidden;
   background-color: #00bd7e1a;
   flex-direction: column;
-  /* Added */
   justify-content: space-between;
-  /* Added */
 }
 
 .project-area {
@@ -99,5 +96,36 @@ export default defineNuxtComponent({
 .learn-more {
   font-style: italic;
   margin-top: 1rem;
+}
+
+@media (max-width: 768px) {
+  .project-list {
+    margin-top: 2rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
+    gap: 1rem;
+
+
+  }
+
+  .project {
+    width: 100%;
+    height: auto;
+    padding: 1rem;
+  }
+
+  .project-area {
+    margin-bottom: 0.5rem;
+  }
+
+  .project smalltext,
+  .learn-more {
+    display: none;
+  }
+
+  h4 {
+    margin-top: 0;
+    font-size: 1.2rem;
+  }
 }
 </style>
