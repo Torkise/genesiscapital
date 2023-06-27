@@ -45,7 +45,8 @@ export default {
 
 header {
     padding: 0px 40px 0px 20px;
-    background-color: rgb(34, 34, 34);
+    /* background-color: rgb(34, 34, 34); */
+    background-color: #ffffff;
     display: flex;
     justify-content: center;
     align-items: center;

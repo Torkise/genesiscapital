@@ -1,7 +1,7 @@
 <template>
   <container>
 
-    <div class="contact">
+    <div>
       <pagetitle>Contact Us</pagetitle>
       <p>If you have any questions or would like to discuss a potential investment opportunity, please feel free to
         contact us:</p>
