@@ -6,8 +6,8 @@
                 <h3>{{ employee.title }}</h3>
             </div>
             <div class="employee-content">
-                <p>{{ employee.bio }}</p>
                 <img class="employee-page-img" :src="employee.photo">
+                <p>{{ employee.bio }}</p>
             </div>
             <project-box :title="'Supervises The Following Projects:'" :projects="projects" />
         </content>
@@ -45,11 +45,8 @@ export default defineNuxtComponent({
 } */
 
 .employee-title {
-    background-color: #FF7A00;
     color: white;
     width: fit-content;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
 }
 
 .employee-page h1 {
@@ -60,17 +57,37 @@ export default defineNuxtComponent({
 
 .employee-content {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    margin-top: 2rem;
+
 }
 
 .employee-content p {
-    padding-right: 2rem;
+    margin-left: 1rem;
     font-size: large;
 }
 
 .employee-content img {
-    max-width: 25vw;
-    border-radius: 25%;
+    max-width: 50vw;
+    max-height: 50vw;
+    margin-top: 0;
     margin-right: 2rem;
+    align-self: center;
+    border-radius: 20%;
+}
+
+
+
+@media screen and (min-width: 768px) {
+    .employee-content {
+        flex-direction: row;
+    }
+
+    .employee-content img {
+        max-width: 25vw;
+        max-height: 25vw;
+        object-fit: cover;
+        margin-top: 1rem;
+    }
 }
 </style>
