@@ -1,15 +1,14 @@
 <template>
     <div class="project-box">
-        <h1>{{ title }}</h1>
+        <h2>{{ title }}</h2>
         <div v-for="(project, index) in projects" :key="index">
             <NuxtLink :to="'/projects/' + project.id">
-                <li>{{ project.title }}</li>
+                <p>{{ project.title }}</p>
             </NuxtLink>
         </div>
     </div>
 </template>
  
-
 
 <script>
 export default {
@@ -30,30 +29,37 @@ export default {
 
 <style scoped>
 .project-box {
-    position: relative;
-    margin-top: 20px;
-    padding: 10px;
+    position: flex;
+    margin-top: 4rem;
+    padding: 1rem;
     background-color: rgba(255, 122, 0, 0.1);
-    border-radius: 60px;
-    max-width: 50%;
+    border-radius: 30px;
+    max-width: 30%;
+    margin-left: auto;
 }
 
-
-.project-box h1 {
-    color: #00bd7e;
-    margin-bottom: 2rem;
+.project-box h2 {
+    margin-top: 1rem;
+    color: #00BD7E;
     font-size: x-large;
-    border-bottom: 1px solid #2c3e50;
 }
 
-.project-box li {
-    cursor: pointer;
-    margin-left: 2rem;
-    margin-bottom: 1rem;
+.project-box p {
+    margin-bottom: 0.5rem;
+    margin-left: rem;
 }
 
-.project-box li:hover {
-    color: blue;
+.project-box p:hover {
+    background: linear-gradient(45deg, #00BD7E, #2D3E50, #ff7a00);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@media screen and (max-width: 768px) {
+    .project-box {
+        max-width: 100%;
+    }
+
 }
 
 @media screen and (max-width: 768px) {

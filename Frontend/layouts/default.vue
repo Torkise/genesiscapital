@@ -76,6 +76,8 @@ h3 {
     font-family: "Recoleta", serif;
     font-size: 1.5rem;
     color: black;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 bluebutton {
