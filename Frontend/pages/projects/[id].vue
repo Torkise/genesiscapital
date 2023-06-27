@@ -89,8 +89,6 @@ export default defineNuxtComponent({
 }
 
 .project-areas {
-    padding-right: 1rem;
-    padding-left: 1rem;
     border-radius: 1rem 1rem 1rem 1rem;
     color: #fff;
     cursor: pointer;
