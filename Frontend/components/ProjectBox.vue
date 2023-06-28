@@ -1,10 +1,13 @@
 <template>
     <div class="project-box">
         <h2>{{ title }}</h2>
-        <div v-for="(project, index) in projects" :key="index">
+        <div v-if="hasProjects" v-for="(project, index) in projects" :key="index">
             <NuxtLink :to="'/projects/' + project.id">
                 <p>{{ project.title }}</p>
             </NuxtLink>
+        </div>
+        <div v-else>
+            <p>This employee is not currently working on a project.</p>
         </div>
     </div>
 </template>
@@ -19,6 +22,10 @@ export default {
         },
         projects: {
             type: Array,
+            required: true,
+        },
+        hasProjects: {
+            type: Boolean,
             required: true,
         },
     },

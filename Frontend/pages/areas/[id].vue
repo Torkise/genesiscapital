@@ -5,7 +5,7 @@
             <div class = "area-content">
                 <div>
                     <normal-text>{{ area.description }}</normal-text>
-                    <project-box :title="'Current Projects in this area:'" :projects="projects" />
+                    <project-box :title="'Current Projects in this area:'" :projects="projects" :hasProjects="hasProjects" />
                 </div>
             </div>
         </div>
@@ -24,31 +24,14 @@ export default defineNuxtComponent({
         const projectsPromise = $fetch(useRuntimeConfig().public.serverURL + '/projects/area=' + route.params.id)
         const [area, projects] = await Promise.all([areaPromise, projectsPromise])
 
+        const hasProjects = projects.length > 0
 
         return {
             area,
             projects,
+            hasProjects
         }
     },
-    methods: {
-        getImageUrl(contenId) {
-            let imageUrl = ''
-
-            if (id === 1) {
-                imageUrl = require('@assets/images/technology/3394 2.png')
-            }
-            if (id === 2) {
-                imageUrl = require('@assets/images/energy/417 1 2.png')
-            } 
-            if (id === 3) {
-                imageUrl = require('@assets/images/healthcare/doctor-reviewing-tablet 1.png')
-            }
-            if (id === 4) {
-                imageUrl = require('@assets/images/sustainability/smart-farming-with-agriculture-iot.png')
-            }   
-            return imageUrl
-        }
-    }
 })
 </script>
 

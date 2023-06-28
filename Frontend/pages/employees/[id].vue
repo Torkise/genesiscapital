@@ -9,7 +9,7 @@
                 <img class="employee-page-img" :src="employee.photo">
                 <p>{{ employee.bio }}</p>
             </div>
-            <project-box :title="'Supervises The Following Projects:'" :projects="projects" />
+            <project-box  :title="'Supervises The Following Projects:'" :projects="projects" :hasProjects="hasProjects" />
         </content>
     </container>
 </template>
@@ -27,11 +27,13 @@ export default defineNuxtComponent({
 
 
         const [employee, projects] = await Promise.all([employeePromise, projectsPromise])
+        const hasProjects = projects.length > 0
 
 
         return {
             employee,
-            projects
+            projects,
+            hasProjects
         }
     }
 })
