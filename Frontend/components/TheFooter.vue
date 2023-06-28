@@ -7,7 +7,7 @@
 
 <style>
 footer {
-    background-color: #f2f2f2;
+    background-color: #ececec;
     flex-shrink: 0;
     text-align: center;
     margin-top: auto;

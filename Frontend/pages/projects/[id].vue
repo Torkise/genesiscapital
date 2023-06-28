@@ -123,7 +123,6 @@ export default defineNuxtComponent({
     margin-top: 1rem;
 }
 
-
 .supervisor {
     color: #000000;
     font-size: 18px;

@@ -5,7 +5,7 @@ html, body
 
 body
 {
-    background-image: url('./assets/img/gray-abstract-wireframe-technology-background.jpg');
+    background-image: linear-gradient(rgba(255, 255, 255, 0.683), rgba(255, 255, 255, 0.171)), url('./assets/img/gray-abstract-wireframe-technology-background.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
