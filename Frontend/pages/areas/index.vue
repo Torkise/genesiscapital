@@ -68,7 +68,8 @@ export default defineNuxtComponent({
 }
 
 .areas-box img:hover {
-  transform: scale(1.2);
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1), 0 5px 15px rgba(0, 0, 0, 0.07);
 }
 
 </style>

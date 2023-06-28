@@ -1,7 +1,4 @@
-<!--
-    Footer of the page
--->
-
+<!-- Footer of the page -->
 <template>
     <footer>
         <p>&copy; 2023 Genesis Capital. All rights reserved.</p>
@@ -10,12 +7,12 @@
 
 <style>
 footer {
-    background-color: rgba(55, 71, 79, 0.3);
+    background-color: #f2f2f2;
     flex-shrink: 0;
     text-align: center;
     margin-top: auto;
     padding: 10px;
-
+    color: #404040;
     min-height: 1vh;
 }
 </style>

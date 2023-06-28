@@ -5,6 +5,10 @@ html, body
 
 body
 {
-    background-color: aliceblue;
+    background-image: url('./assets/img/gray-abstract-wireframe-technology-background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
     margin: 0;
 }

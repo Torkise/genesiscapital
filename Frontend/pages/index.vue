@@ -29,13 +29,13 @@
 
 
 
-.home p {
+.home {
   font-size: 28px;
   font-family: Poppins;
   color: #333;
   margin-bottom: 2rem;
-  margin-left: 80px;
-  margin-right: 190px;
+  margin-left: 4rem;
+  margin-right: 4rem;
 }
 @media (max-width: 768px) {
   .home p {
@@ -68,9 +68,9 @@
   justify-content: center;
   background-color: #f2f2f2;
   padding: 3rem;
-  margin: 100px;
+  margin: 4rem;
   color: #000000;
-  border-radius: 20px;
+  border-radius: 2rem;
 }
 
 @media (max-width: 768px) {
@@ -125,7 +125,7 @@
 
 .image-wrapper img {
   width: 100%;
-  border-radius: 50px;
+  border-radius: 2rem;
 }
 
 .content {
