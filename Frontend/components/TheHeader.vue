@@ -50,6 +50,8 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+        border-bottom: 2px solid #fda251; /* Add a 1px solid line at the bottom of the header */
+
 }
 
 .header-left {

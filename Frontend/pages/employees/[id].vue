@@ -46,9 +46,11 @@ export default defineNuxtComponent({
     height: 100vh;
 } */
 
-.employee-title {
-    color: white;
-    width: fit-content;
+.employee-title h3 {
+    background:linear-gradient(45deg, #2f05a1, #820669, #f77ce6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+   width: fit-content;
 }
 
 .employee-page h1 {
@@ -65,8 +67,24 @@ export default defineNuxtComponent({
 }
 
 .employee-content p {
-    margin-left: 1rem;
-    font-size: large;
+  font-size: 26px;
+  font-family: Poppins;
+  color: #333;
+  margin-bottom: 2rem;
+  margin-left: 5px;
+  margin-right: 10px;
+}
+
+@media (max-width: 768px) {
+  .employee-content p {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .employee-content p {
+    font-size: 13px;
+  }
 }
 
 .employee-content img {

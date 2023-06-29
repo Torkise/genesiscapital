@@ -27,71 +27,107 @@ export default defineNuxtComponent({
     <div>
       <pagetitle>Our Fields of Interest</pagetitle>
       <section id="general" class="area-section">
-        <p>In Genesis Capital, we are committed to investing in innovative and high-growth potential startups that are
-          poised to make a significant impact in their respective industries. On this page, we provide an overview of the
-          areas in which we invest and the types of businesses we are looking to support. Whether you are an entrepreneur
-          seeking funding for your startup or an investor interested in learning more about our investment strategy, we
-          hope
-          this page provides valuable insights into our focus and approach.</p>
+        <p class="general-description">In Genesis Capital, we are committed to investing in innovative and high-growth potential startups that are poised to make a significant impact in their respective industries. On this page, we provide an overview of the areas in which we invest and the types of businesses we are looking to support. Whether you are an entrepreneur seeking funding for your startup or an investor interested in learning more about our investment strategy, we hope this page provides valuable insights into our focus and approach.</p>
       </section>
 
       <div class="areas-box">
-        <div class="areas-image-box" v-for="area in areas">
-          <NuxtLink :to="'/areas/' + area.id">
-            <img :src="area.mainphoto">
+        <div class="areas-image-box">
+          <NuxtLink :to="'/areas/' + areas[0].id">
+            <img :src="areas[0].mainphoto">
+            <div class="image-caption">Technology</div>
+          </NuxtLink>
+        </div>
+        <div class="areas-image-box">
+          <NuxtLink :to="'/areas/' + areas[1].id">
+            <img :src="areas[1].mainphoto">
+            <div class="image-caption">Energy</div>
+          </NuxtLink>
+        </div>
+        <div class="areas-image-box">
+          <NuxtLink :to="'/areas/' + areas[2].id">
+            <img :src="areas[2].mainphoto">
+            <div class="image-caption">Healthcare</div>
+          </NuxtLink>
+        </div>
+        <div class="areas-image-box">
+          <NuxtLink :to="'/areas/' + areas[3].id">
+            <img :src="areas[3].mainphoto">
+            <div class="image-caption">Sustainability</div>
           </NuxtLink>
         </div>
       </div>
     </div>
-
   </container>
 </template>
-  
-  <style>
-.areas-box {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-top: 4rem;
-  padding: 0 1rem;
-  padding-left: 0;
-  padding-right: 0;
+
+<style>
+
+.area-section p {
+  font-size: 24px;
+  font-family: Poppins;
+  color: #333;
+  margin-bottom: 2rem;
+  margin-left: 5px;
+  margin-right: 10px;
 }
 
+@media (max-width: 768px) {
+  .area-section p {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .area-section p {
+    font-size: 11px;
+  }
+}
+
+.areas-box {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1rem;
+  margin-top: 4rem;
+  padding: 0 1rem;
+}
+
+.areas-image-box {
+  position: relative;
+}
 
 .areas-image-box img {
-  margin: 0.5rem;
-  width: 25vh;
-  height: 25vh;
+  width: 100%;
+  height: auto;
   transition: transform 0.3s ease-in-out;
 }
 
-.areas-box img:hover {
+.image-caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: .5rem;
+  background-color: rgb(248, 174, 109);
+  color: #fff;
+  font-size: 26px;
+  text-align: center;
+}
+@media (max-width: 768px) {
+  .image-caption p {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .image-caption p {
+    font-size: 11px;
+  }
+}
+
+.areas-image-box:hover img {
   transform: translateY(-10px);
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1), 0 5px 15px rgba(0, 0, 0, 0.07);
 }
 
-@media (max-width: 1344px) {
-  .areas-box {
-    padding-left: 25%;
-    padding-right: 25%;
-  }
-}
-
-@media (max-width: 1100px) {
-  .areas-box {
-    padding-left: 15%;
-    padding-right: 15%;
-  }
-}
-
-@media (max-width: 810px) {
-  .areas-box {
-    padding-left: 5%;
-    padding-right: 5%;
-  }
-}
-
 
 </style>
-  

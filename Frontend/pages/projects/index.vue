@@ -59,6 +59,26 @@ export default defineNuxtComponent({
   flex-direction: column;
   justify-content: space-between;
 }
+.projects p {
+  font-size: 24px;
+  font-family: Poppins;
+  color: #333;
+  margin-bottom: 2rem;
+  margin-left: 5px;
+  margin-right: 10px;
+}
+
+@media (max-width: 768px) {
+  .projects p {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .projects p {
+    font-size: 11px;
+  }
+}
 
 .project-area {
   display: inline-block;
