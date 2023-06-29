@@ -60,6 +60,11 @@ export default defineNuxtComponent({
   justify-content: space-between;
 }
 
+.project:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1), 0 5px 15px rgba(0, 0, 0, 0.07);
+}
+
 .project-area {
   display: inline-block;
   margin-right: 0.5rem;

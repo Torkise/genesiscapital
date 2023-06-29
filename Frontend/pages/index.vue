@@ -19,6 +19,7 @@
       <img src="https://thumbs.dreamstime.com/b/technology-logo-tech-firm-logo-vector-design-full-vector-template-technology-logo-tech-firm-logo-vector-design-full-vector-109273835.jpg" alt="Employees Photo">
     </div>
     <div class="content">
+      <h3>Unleashing Innovation</h3>
       <p>Discover the future through our funded projects. At Genesis Capital, we fuel innovation and support groundbreaking ventures that redefine industries. With a diverse portfolio spanning technology, healthcare, sustainability, and more, we empower visionary entrepreneurs to make a lasting impact. Join us as we shape tomorrow. Explore our website for details on our funded projects and investment opportunities.</p>
       <NuxtLink to="/areas/"><button>Learn More</button></NuxtLink>
     </div>
@@ -26,9 +27,6 @@
 </template>
 
 <style>
-
-
-
 .home {
   font-size: 28px;
   font-family: Poppins;
@@ -36,31 +34,6 @@
   margin-bottom: 2rem;
   margin-left: 4rem;
   margin-right: 4rem;
-}
-@media (max-width: 768px) {
-  .home p {
-    font-size: 25px;
-    margin-right: 30px;
-  }
-}
-
-@media (max-width: 480px) {
-  .home p {
-    margin-right: 10px;
-    font-size: 15px;
-  }
-}
-
-/* Updated styles for small screens */
-
-@media (max-width: 768px) {
-  .section {
-    flex-direction: column-reverse;
-  }
-
-  .section .image-wrapper {
-    margin-top: 2rem;
-  }
 }
 
 .section {
@@ -73,29 +46,11 @@
   border-radius: 2rem;
 }
 
-@media (max-width: 768px) {
-  .section {
-    margin: 20px;
-  }
-}
-
 .section h3 {
   color: #FF7A00;
   font-size: 30px;
   font-family: Poppins;
   margin-left: 5px;
-}
-
-@media (max-width: 768px) {
-  .section h3 {
-    font-size: 20px;
-  }
-}
-
-@media (max-width: 480px) {
-  .section h3 {
-    font-size: 15px;
-  }
 }
 
 .section p {
@@ -107,24 +62,14 @@
   margin-right: 10px;
 }
 
-@media (max-width: 768px) {
-  .section p {
-    font-size: 19px;
-  }
-}
-
-@media (max-width: 480px) {
-  .section p {
-    font-size: 15px;
-  }
-}
-
 .image-wrapper {
+  display: flex;
+  align-items: center;
   overflow: hidden;
 }
 
 .image-wrapper img {
-  width: 100%;
+  min-width: 100%;
   border-radius: 2rem;
 }
 
@@ -132,14 +77,6 @@
   flex: 0 0 50%;
   padding: 4rem;
 }
-
-@media (max-width: 768px) {
-  .content {
-    flex: 50 1 80%;
-    flex-direction: column;
-  }
-}
-
 .section button {
   margin-top: 1rem;
   font-size: 20px;
@@ -154,5 +91,30 @@
 
 .section button:hover {
   background-color: rgb(108, 112, 111);
+}
+
+@media (max-width: 1080px) {
+  .content {
+    flex: 50 1 80%;
+    flex-direction: column;
+    padding: 1rem;
+  }
+  .section p {
+    font-size: 19px;
+  }
+  .section h3 {
+    font-size: 20px;
+  }
+  .section {
+    flex-direction: column-reverse;
+  }
+  .image-wrapper {
+    margin-top: 2rem;
+  }
+  .image-wrapper img {
+    width: 100%; 
+    max-width: 100px;
+    border-radius: 2rem;
+  }
 }
 </style>
