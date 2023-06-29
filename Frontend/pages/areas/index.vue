@@ -54,22 +54,43 @@ export default defineNuxtComponent({
   justify-content: center;
   margin-top: 4rem;
   padding: 0 1rem;
+  padding-left: 0;
+  padding-right: 0;
 }
 
-.areas-image-box {
-  display: flex;
-}
 
-.areas-box img {
+.areas-image-box img {
   margin: 0.5rem;
-  width: 40vh;
-  height: 40vh;
+  width: 25vh;
+  height: 25vh;
   transition: transform 0.3s ease-in-out;
 }
 
 .areas-box img:hover {
   transform: scale(1.2);
 }
+
+@media (max-width: 1344px) {
+  .areas-box {
+    padding-left: 25%;
+    padding-right: 25%;
+  }
+}
+
+@media (max-width: 1100px) {
+  .areas-box {
+    padding-left: 15%;
+    padding-right: 15%;
+  }
+}
+
+@media (max-width: 810px) {
+  .areas-box {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
+
 
 </style>
   
