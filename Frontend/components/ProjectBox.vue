@@ -39,7 +39,7 @@ export default {
     position: flex;
     margin-top: 4rem;
     padding: 1rem;
-    background-color: rgba(255, 122, 0, 0.1);
+    background: linear-gradient(115deg,  rgba(29, 110, 9, 0), rgba(29, 110, 9, 0.15));
     border-radius: 30px;
     max-width: 30%;
     margin-left: auto;
