@@ -48,6 +48,26 @@ export default defineNuxtComponent({
 .employees-description {
   margin-bottom: 8rem;
 }
+.employees-description p {
+  font-size: 24px;
+  font-family: Poppins;
+  color: #333;
+  margin-bottom: 2rem;
+  margin-left: 5px;
+  margin-right: 10px;
+}
+
+@media (max-width: 768px) {
+  .employees-description p {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .employees-description p {
+    font-size: 11px;
+  }
+}
 
 .employee-card {
   background-color: #FFFFFF;
