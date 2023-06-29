@@ -87,7 +87,7 @@ export default defineNuxtComponent({
     margin-top: 2rem;
     display: flex;
     flex-direction: column;
-    background-color: rgba(0, 189, 126, 0.25);
+    background: linear-gradient(to right,  rgba(29, 110, 9, 0), rgba(29, 110, 9, 0.15));
     width: 30vi;
     padding: 2rem;
     border-radius: 2rem;
