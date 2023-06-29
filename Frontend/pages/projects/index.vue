@@ -21,10 +21,10 @@ export default defineNuxtComponent({
       <div class="project-list">
         <div v-for="(project, index) in projects" :key="project.id">
           <div class="project">
-            <NuxtLink :to="'/projects/' + project.id">
-              <div class="project-area" :class="area.toLowerCase()" v-for="area in project.areas" :key="area">
+            <div class="project-area" :class="area.toLowerCase()" v-for="area in project.areas" :key="area">
                 {{ area }}
               </div>
+            <NuxtLink :to="'/projects/' + project.id">
               <h4>{{ project.title }}</h4>
               <smalltext>{{ project.shortDescription }}</smalltext>
               <div class="learn-more">
@@ -55,7 +55,7 @@ export default defineNuxtComponent({
   border-radius: 2rem;
   box-sizing: border-box;
   overflow: hidden;
-  background-color: #00bd7e1a;
+  background-color: rgba(222,241,237,255);
   flex-direction: column;
   justify-content: space-between;
 }
@@ -67,7 +67,6 @@ export default defineNuxtComponent({
   padding: 0.25rem 1rem;
   border-radius: 1rem 1rem 1rem 1rem;
   color: #fff;
-  text-transform: capitalize;
 }
 
 .project-area.healthcare {
@@ -91,8 +90,6 @@ export default defineNuxtComponent({
   margin-top: 0;
 }
 
-
-
 .learn-more {
   font-style: italic;
   margin-top: 1rem;
@@ -104,12 +101,10 @@ export default defineNuxtComponent({
     margin-right: 1rem;
     margin-left: 1rem;
     gap: 1rem;
-
-
   }
 
   .project {
-    width: 100%;
+    width: 70vi;
     height: auto;
     padding: 1rem;
   }

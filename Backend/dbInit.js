@@ -14,7 +14,7 @@ export default async (models) => {
           name: "Jane Smith",
           title: "Investment Associate",
           bio: "Jane specializes in identifying emerging technologies and investment opportunities. With a keen eye for market trends, she excels in analyzing potential risks and returns for our clients. Jane's passion for technology and finance drives her to stay up-to-date with the latest industry developments. She has a proven track record of successfully advising clients on strategic investment decisions, helping them achieve their financial goals. Jane's dedication, analytical skills, and attention to detail make her an invaluable asset to our team.",
-          photo: "https://cdn.shopify.com/s/files/1/0582/2270/6885/collections/11.jpg?v=1629359113",
+          photo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSO41wh39rFylf4ODozc5ZJSBIXNsa1ok9EIg&usqp=CAU",
         },
         {
           id: 3,

@@ -40,7 +40,7 @@ export default {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    background-color: #ffffff;
+    
     margin: 0 auto;
     font-family: "Graphik Web", Arial, sans-serif;
     font-size: 1rem;
@@ -103,7 +103,6 @@ pagetitle {
     position: relative;
     display: inline-block;
     width: 100%;
-    margin-left: 20px;
     /* Gradient background */
     background: linear-gradient(45deg, #00BD7E, #2D3E50, #ff7a00);
     -webkit-background-clip: text;
