@@ -8,16 +8,16 @@
   
   <div class="statistics">
       <div class="statistic">
-        <h3 class="statistic-number">100+</h3>
+        <h3 class="statistic-number"><AnimatedNumbers :number=100></AnimatedNumbers></h3>
         <p class="statistic-label">Successful Investments</p>
       </div>
       <div class="statistic">
-        <h3 class="statistic-number">1,000+</h3>
+        <h3 class="statistic-number"><AnimatedNumbers :number=500></AnimatedNumbers></h3>
         <p class="statistic-label">Jobs Created</p>
       </div>
       <div class="statistic">
-        <h3 class="statistic-number">$1B+</h3>
-        <p class="statistic-label">Funds Raised</p>
+        <h3 class="statistic-number"><AnimatedNumbers :number=1000></AnimatedNumbers></h3>
+        <p class="statistic-label"> Million in Funds Raised</p>
       </div>
     </div>
 </template>
@@ -47,5 +47,17 @@
 .statistic-label {
   font-size: 14px;
   color: #888;
+}
+
+@media (max-width: 768px) {
+  .statistic {
+    flex-direction: column;
+  }
+  .statistic-number {
+    font-size: 22px;
+  }
+  .statistic-label {
+    font-size: 12px;
+  }
 }
 </style>
