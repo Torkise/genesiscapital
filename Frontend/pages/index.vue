@@ -117,4 +117,46 @@
     border-radius: 2rem;
   }
 }
+
+@media (max-width: 786px) {
+  .section {
+    margin: 2rem;
+  }
+  .section p {
+    font-size: 16px;
+  }
+  .section h3 {
+    font-size: 18px;
+  }
+  .section button {
+    font-size: 16px;
+  }
+  .home {
+    font-size: 20px;
+  }
+  .home {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+  .home {
+    margin-bottom: 1rem;
+  }
+  .section {
+    margin: 1rem;
+  }
+  .section p {
+    margin-bottom: 1rem;
+  }
+  .section h3 {
+    margin-bottom: 1rem;
+  }
+  .section button {
+    margin-top: 0.5rem;
+  }
+  .image-wrapper img {
+    width: 100%; 
+    max-width: 100px;
+    border-radius: 2rem;
+  }
+}
 </style>
