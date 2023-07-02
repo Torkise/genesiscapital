@@ -93,6 +93,7 @@ nav a:hover {
 .menu-items {
     display: flex;
     gap: 15px;
+    text-align: center;
 }
 
 .logo {

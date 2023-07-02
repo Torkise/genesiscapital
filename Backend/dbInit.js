@@ -85,6 +85,7 @@ export default async (models) => {
           supervisor: 1,
           areas: "['Sustainability', 'Energy']",
           featured: true,
+          photo:"https://dz5x0h7grstlc.cloudfront.net/Pictures/480xany/4/6/1/14461_canopeyhomepage_740646.png",
         },
         {
             id: 2,
@@ -94,6 +95,7 @@ export default async (models) => {
             supervisor: 2,
             areas: "['Energy']",
             featured: true,
+            photo:"https://www.ku.ac.ae/wp-content/uploads/2022/07/Comparing-the-Cost-of-Energy-Storage-Systems-for-Renewable-Energy.jpg",
           },
         {
           id: 3,
@@ -103,6 +105,7 @@ export default async (models) => {
           supervisor: 3,
           areas: "['Healthcare', 'Technology']",
           featured: true,
+          photo: "https://www.hospitalmanagement.net/wp-content/uploads/sites/9/2023/06/MediKarma.jpg",
         },
         {
             id: 4,
@@ -112,6 +115,7 @@ export default async (models) => {
             supervisor: 4,
             areas: "['Energy']",
             featured: false,
+            photo:"https://cdn.vox-cdn.com/thumbor/xjbPlXbKzIVzfdlU82lY3TRDH4g=/1400x788/filters:format(jpeg)/cdn.vox-cdn.com/uploads/chorus_asset/file/18956060/shutterstock_1075034981.jpg",
           },
           {
             id: 5,
@@ -121,6 +125,7 @@ export default async (models) => {
             supervisor: 5,
             areas: "['Technology']",
             featured: false,
+            photo:"https://sprintlogistics.com/wp-content/uploads/elementor/thumbs/City-with-logistics-network-diagram-overlay-p35iav1f1rnlcfbpkwes5ceviynkvmdw2gp6wo691c.jpg",
           },
           {
             id: 6,
@@ -130,6 +135,7 @@ export default async (models) => {
             supervisor: 2,
             areas: "['Technology']",
             featured: false,
+            photo:"https://crystalheatingandcooling.ca/wp-content/uploads/2021/06/Crystal-smart-home-security-system-scaled.jpeg",
           },
           {
             id: 7,
@@ -139,6 +145,7 @@ export default async (models) => {
             supervisor: 7,
             areas: "['Healthcare']",
             featured: false,
+            photo:"https://www.xenonstack.com/hubfs/healthcare-analytics-platform-xenonstack.png",
           },
           {
             id: 8,
@@ -148,6 +155,7 @@ export default async (models) => {
             supervisor: 1,
             areas: "['Energy']",
             featured: false,
+            photo:"https://www.shell.com/energy-and-innovation/new-energies/_jcr_content/root/metadata.coreimg.png/1665749103830/solar-and-wind-turbine.png",
           },
           {
             id: 9,
@@ -157,6 +165,7 @@ export default async (models) => {
             supervisor: 3,
             areas: "['Technology']",
             featured: false,
+            photo:"https://assets.entrepreneur.com/content/3x2/2000/20181115101526-shutterstock-1228052422.jpeg",
           },
           {
             id: 10,
@@ -166,6 +175,7 @@ export default async (models) => {
             supervisor: 7,
             areas: "['Healthcare', 'Technology']",
             featured: false,
+            photo:"https://www.cell.com/cms/asset/935ee0af-040d-41da-a0d6-e9d3dac645ae/gr1.jpg",
           },
           {
             id: 11,
@@ -175,6 +185,7 @@ export default async (models) => {
             supervisor: 3,
             areas: "['Energy', 'Technology']",
             featured: false,
+            photo:"https://www.transect.com/hubfs/AdobeStock_395820907.webp",
           },
           {
             id: 12,
@@ -184,6 +195,7 @@ export default async (models) => {
             supervisor: 1,
             areas: "['Technology']",
             featured: false,
+            photo:"https://ipwatchdog.com/wp-content/uploads/2017/02/digital-personal-assistant-concept.jpg",
           },
           {
             id: 13,
@@ -193,6 +205,7 @@ export default async (models) => {
             supervisor: 5,
             areas: "['Technology']",
             featured: false,
+            photo:"https://images.squarespace-cdn.com/content/v1/5e7203036c556712eb563b48/635ecb07-e60c-4929-a89c-465e1b1d92b6/RAC_FOP2_Avetta.jpg",
           },
         
     ]

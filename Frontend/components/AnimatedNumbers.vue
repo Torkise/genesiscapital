@@ -11,7 +11,7 @@
       },
       duration: {
         type: Number,
-        default: 6000 // 1 second by default
+        default: 2000 // 1 second by default
       },
       noText: {
         type: String,

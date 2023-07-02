@@ -1,6 +1,11 @@
 <template>
     <container>
         <div class="areas">
+            <NuxtLink :to="'/areas/'"> 
+                <div class="back-button-wrap">
+                    <img class="back-button" src="../../assets/img/back.png">
+                </div>
+            </NuxtLink>
             <pagetitle> {{ area.name }} </pagetitle>
             <div class = "area-content">
                 <div>

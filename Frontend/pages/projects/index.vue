@@ -19,19 +19,19 @@ export default defineNuxtComponent({
         promising ventures across a variety of sectors. Explore our portfolio and learn more about the exciting new
         companies we are supporting.</p>
       <div class="project-list">
-        <div v-for="(project, index) in projects" :key="project.id">
-          <div class="project">
-            <div class="project-area" :class="area.toLowerCase()" v-for="area in project.areas" :key="area">
-                {{ area }}
+        <div v-for="project in projects" :key="project.id">
+          <NuxtLink :to="'/projects/' + project.id">
+            <div class="project">
+              <div class="project-area" :class="area.toLowerCase()" v-for="area in project.areas" :key="area">
+                  {{ area }}
               </div>
-            <NuxtLink :to="'/projects/' + project.id">
-              <h4>{{ project.title }}</h4>
-              <smalltext>{{ project.shortDescription }}</smalltext>
-              <div class="learn-more">
-                <smalltext>Learn more...</smalltext>
-              </div>
-            </NuxtLink>
-          </div>
+                <h4>{{ project.title }}</h4>
+                <smalltext>{{ project.shortDescription }}</smalltext>
+                <div class="learn-more">
+                  <smalltext>Learn more...</smalltext>
+                </div>
+            </div>
+          </NuxtLink>
         </div>
       </div>
     </div>
