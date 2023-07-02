@@ -1,5 +1,10 @@
 <template>
     <div class="project-div">
+        <NuxtLink :to="'/projects/'"> 
+            <div class="back-button-wrap">
+                <img class="back-button" src="../../assets/img/back.png">
+            </div>
+        </NuxtLink>
       <pagetitle>{{ project.title }}</pagetitle>
       <div class="project-area" :class="area.name.toLowerCase()" v-for="area in areas">
         <NuxtLink :to="'/areas/' + area.id"> 
@@ -96,7 +101,6 @@
   @media (max-width: 768px) {
     .project-content {
       flex-direction: column;
-      padding-right: 2rem;
     }
     
     .project-content img {

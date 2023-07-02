@@ -13,3 +13,10 @@ body
     margin: 0;
     cursor: default;
 }
+
+.back-button {
+    width: 40px;
+}
+.back-button-wrap {
+    margin-top: 1rem;
+}
