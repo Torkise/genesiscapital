@@ -81,6 +81,7 @@
     width: 22vi;
     padding: 2rem;
     align-items: center;
+    text-align: center;
   }
   
   .employee-img {
@@ -110,6 +111,14 @@
       flex-direction: column;
       align-items: center;
       margin: 2rem auto;
+    }
+    .employee-img {
+        width: 20vi;
+        border-radius: 50%;
+        margin-top: 1rem;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
     }
   }
   </style>  
