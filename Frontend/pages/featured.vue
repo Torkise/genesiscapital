@@ -10,26 +10,31 @@
             new
             possibilities and paving the way for a brighter future.</p>
         <div class="featured" v-for="project in featuredProjects" :key="project.id">
-            <h2 class="featured-project-title">{{ project.title }}</h2>
+            <div class="area" :class="area.toLowerCase()" v-for="area in project.areas" :key="area">
+                <NuxtLink :to="'/areas/' + get_area_id(area)">
+                    {{ area }}
+                </NuxtLink>
+            </div>
+            <NuxtLink :to="'/projects/' + project.id">
+                <h4>{{ project.title }}</h4>
+            </NuxtLink>
             <div class="text-box">
-                <p>{{ project.longDescription }}</p>
-                <img src="https://images.pexels.com/photos/6153354/pexels-photo-6153354.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                    alt="Image" />
-            </div>
-            <div class="supervisor">
-                <h3>Supervised By:</h3>
-                <h2>
-                    <NuxtLink :to="'/employees/' + project.supervisor">{{ project.projectSupervisor.name }}</NuxtLink>
-                </h2>
-            </div>
-            <hr />
-            <div style="margin-left: 2rem;">
-                <div class="area" :class="area.toLowerCase()" v-for="area in project.areas" :key="area">
-                    <NuxtLink :to="'/areas/' + get_area_id(area)">
-                        {{ area }}
-                    </NuxtLink>
+                <div>
+                    <p>{{ project.longDescription }}</p>
+                    <div class="supervisor">
+                        <h3>Supervised By:</h3>
+                        <div class="supervisor-name">
+                            <h3>
+                                <NuxtLink :to="'/employees/' + project.supervisor">{{ project.projectSupervisor.name }}
+                                </NuxtLink>
+                            </h3>
+                        </div>
+
+                    </div>
                 </div>
+                <img :src="project.photo" />
             </div>
+
         </div>
     </container>
 </template>
@@ -52,20 +57,17 @@ export default defineNuxtComponent({
 }
 
 .featured {
-    min-height: 60vh;
-    width: 90vw;
-    background: rgba(44, 62, 80, 0.2);
+    width: 60vw;
+    padding: 1rem 2rem 2rem 2rem;
+    background-color: rgba(222, 241, 237, 255);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 50px;
-    margin-bottom: 6rem;
+    border-radius: 2rem;
+    margin-top: 4rem;
     margin-left: 5vw;
 }
 
-.featured-project-title {
-    color: #FF7A00;
-    margin-left: 2rem;
-    margin-bottom: 2rem;
-
+.featured h4 {
+    font-size: 2rem;
 }
 
 .text-box {
@@ -74,41 +76,33 @@ export default defineNuxtComponent({
 }
 
 .text-box p {
-    font-size: large;
-    position: relative;
-    margin-left: 2rem;
     margin-right: 2rem;
 }
 
 .text-box img {
-    max-width: 30vw;
+    max-width: 40vh;
+    width: 100%;
     border-radius: 10%;
     margin-right: 2rem;
-    margin-bottom: 2rem;
 }
 
 .supervisor {
-    padding-left: 2rem;
     display: flex;
     flex-direction: row;
-}
-
-.supervisor h2 {
-    font-size: large;
-    margin-left: 2rem;
-    border-bottom: 1px solid black;
-    cursor: pointer;
-}
-
-.supervisor h2:hover {
-
-    color: #FF7A00;
-    border-color: #FF7A00;
+    align-items: center;
 }
 
 .supervisor h3 {
-    font-size: medium;
     cursor: default;
+    font-weight: lighter;
+    font-size: 1.3rem;
+}
+
+.supervisor-name h3 {
+    margin-left: 2rem;
+    color: black;
+    border-bottom: 1px solid black;
+    text-decoration: none;
 }
 
 .area {
@@ -149,7 +143,11 @@ export default defineNuxtComponent({
     }
 
     .text-box img {
-        max-width: 40vw;
+        display: none;
+    }
+
+    .featured h4 {
+        font-size: 1.5rem;
     }
 }
 </style>

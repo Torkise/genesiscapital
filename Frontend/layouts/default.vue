@@ -39,7 +39,7 @@ export default {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    
+
     margin: 0 auto;
     font-family: "Graphik Web", Arial, sans-serif;
     font-size: 1rem;
@@ -79,34 +79,7 @@ h3 {
     margin-bottom: 0;
 }
 
-bluebutton {
-    border: 0;
-    background: #2D3E50;
-    text-align: center;
-    font-size: 1rem;
-    color: #ffffff;
-    border-radius: 4rem;
-    font-weight: bolder;
-    transition: background-color 0.25s ease-out, scale 0.1s ease-out;
-    display: inline-block;
-    padding: 0.5rem 1rem;
-}
 
-pagetitle {
-    font-family: "Recoleta", serif;
-    font-size: 4rem;
-    font-weight: bold;
-    margin: 4rem 0 2rem;
-    color: #ffffff;
-    /* Set the font color to white */
-    position: relative;
-    display: inline-block;
-    width: 100%;
-    /* Gradient background */
-    background: linear-gradient(45deg, #00BD7E, #2D3E50, #ff7a00);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
 
 h4 {
     line-height: 1.3;
@@ -128,8 +101,16 @@ smalltext {
 }
 
 
-.gradient-text {
-    color: white;
+pagetitle {
+    font-family: "Recoleta", serif;
+    font-size: 4rem;
+    font-weight: bold;
+    margin: 4rem 0 2rem;
+    color: #ffffff;
+    /* Set the font color to white */
+    position: relative;
+    display: inline-block;
+    width: 100%;
     /* Gradient background */
     background: linear-gradient(45deg, #00BD7E, #2D3E50, #ff7a00);
     -webkit-background-clip: text;

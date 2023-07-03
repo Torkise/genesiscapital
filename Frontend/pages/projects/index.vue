@@ -23,13 +23,15 @@ export default defineNuxtComponent({
           <NuxtLink :to="'/projects/' + project.id">
             <div class="project">
               <div class="project-area" :class="area.toLowerCase()" v-for="area in project.areas" :key="area">
+                <NuxtLink :to="'/areas/' + get_area_id(area)">
                   {{ area }}
+                </NuxtLink>
               </div>
-                <h4>{{ project.title }}</h4>
-                <smalltext>{{ project.shortDescription }}</smalltext>
-                <div class="learn-more">
-                  <smalltext>Learn more...</smalltext>
-                </div>
+              <h4>{{ project.title }}</h4>
+              <smalltext>{{ project.shortDescription }}</smalltext>
+              <div class="learn-more">
+                <smalltext>Learn more...</smalltext>
+              </div>
             </div>
           </NuxtLink>
         </div>
@@ -55,7 +57,7 @@ export default defineNuxtComponent({
   border-radius: 2rem;
   box-sizing: border-box;
   overflow: hidden;
-  background-color: rgba(222,241,237,255);
+  background-color: rgba(222, 241, 237, 255);
   flex-direction: column;
   justify-content: space-between;
 }
