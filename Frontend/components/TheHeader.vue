@@ -45,7 +45,6 @@ export default {
 
 header {
     padding: 0px 40px 0px 20px;
-    /* background-color: rgb(34, 34, 34); */
     background-color: #ffffff;
     display: flex;
     justify-content: center;
@@ -96,6 +95,7 @@ nav a:hover {
 .menu-items {
     display: flex;
     gap: 15px;
+    text-align: center;
 }
 
 .logo {

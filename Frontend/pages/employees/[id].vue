@@ -1,6 +1,11 @@
 <template>
     <container>
         <content>
+            <NuxtLink :to="'/employees/'"> 
+                <div class="back-button-wrap">
+                    <img class="back-button" src="../../assets/img/back.png">
+                </div>
+            </NuxtLink>
             <pagetitle>{{ employee.name }}</pagetitle>
             <div class="employee-title">
                 <h3>{{ employee.title }}</h3>

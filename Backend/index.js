@@ -80,7 +80,11 @@ async function initDB() {
         featured: {
             type: DataTypes.BOOLEAN,
             allowNull: false
-        }
+        },
+        photo: {
+            type: DataTypes.STRING,
+            allowNull: true
+        },
     })
 
     models.Employee = db.define('employee', {

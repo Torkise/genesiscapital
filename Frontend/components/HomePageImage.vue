@@ -45,7 +45,7 @@ export default {
     position: absolute;
     top: 0; 
     left: 0;
-    padding-bottom: 56.25%;  
+    padding-bottom: 36.25%;  
     position: relative;
   }
   .banner {

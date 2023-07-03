@@ -2,7 +2,6 @@
     <div class='page'>
         <TheHeader @toggle-sidebar="toggleSidebar" />
         <Sidebar :is-open="isSidebarOpen" @close-sidebar="closeSidebar" />
-
         <slot />
         <TheFooter />
     </div>
