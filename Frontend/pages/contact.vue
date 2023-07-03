@@ -32,7 +32,26 @@
   display: flex;
   margin-top: 2rem;
 }
+.contactus {
+  font-size: 28px;
+  font-family: Poppins;
+  color: #333;
+  margin-bottom: 2rem;
+  margin-left: 100px;
+  margin-right: 10px;
+}
 
+@media (max-width: 768px) {
+  .contactus {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .contactus {
+    font-size: 13px;
+  }
+}
 .social-media img {
   margin: 0 1rem;
   height: 2rem;

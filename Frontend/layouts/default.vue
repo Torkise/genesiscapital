@@ -97,7 +97,7 @@ pagetitle {
     font-family: "Recoleta", serif;
     font-size: 4rem;
     font-weight: bold;
-    margin: 4rem 0 2rem;
+    margin: 4rem 0 0rem;
     color: #ffffff;
     /* Set the font color to white */
     position: relative;

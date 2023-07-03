@@ -47,10 +47,11 @@ export default defineNuxtComponent({
 } */
 
 .employee-title h3 {
-    background:linear-gradient(45deg, #2f05a1, #820669, #f77ce6);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+   font-size: 28px;
+   font-family: Poppins;
+   color: #3e3a3a;
    width: fit-content;
+   margin-left: 0.5rem;
 }
 
 .employee-page h1 {
