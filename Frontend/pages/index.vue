@@ -16,7 +16,7 @@
   </div>
   <div class="section">
     <div class="image-wrapper">
-      <img src="https://thumbs.dreamstime.com/b/technology-logo-tech-firm-logo-vector-design-full-vector-template-technology-logo-tech-firm-logo-vector-design-full-vector-109273835.jpg" alt="Employees Photo">
+      <img src="https://sloanreview.mit.edu/wp-content/uploads/2021/09/GEN-Haski-Leventhal-Social-Intrapreneurship-1290x860-1.jpg" alt="Employees Photo">
     </div>
     <div class="content">
       <h3>Unleashing Innovation</h3>

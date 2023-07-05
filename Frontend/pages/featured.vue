@@ -63,7 +63,6 @@ export default defineNuxtComponent({
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 2rem;
     margin-top: 4rem;
-    margin-left: 5vw;
 }
 
 .featured h4 {
@@ -81,6 +80,7 @@ export default defineNuxtComponent({
 
 .text-box img {
     max-width: 40vh;
+    max-height: 40vh;
     width: 100%;
     border-radius: 10%;
     margin-right: 2rem;
@@ -135,6 +135,17 @@ export default defineNuxtComponent({
 .sustainability {
     background-color: #9d64f8;
 }
+
+@media screen and (max-width: 1064px) {
+    .text-box {
+        flex-direction: column;
+        align-items: center
+    }
+    .text-box img {
+        margin-top: 2rem;
+    }
+}
+    
 
 @media screen and (max-width: 860px) {
     .text-box {
