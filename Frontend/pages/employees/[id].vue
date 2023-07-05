@@ -14,6 +14,7 @@
                 <img class="employee-page-img" :src="employee.photo">
                 <p>{{ employee.bio }}</p>
             </div>
+            
             <project-box  :title="'Supervises The Following Projects:'" :projects="projects" :hasProjects="hasProjects" />
         </content>
     </container>
@@ -47,9 +48,6 @@ export default defineNuxtComponent({
 
 
 <style>
-/* .employee-page {
-    height: 100vh;
-} */
 
 .employee-title h3 {
    font-size: 28px;

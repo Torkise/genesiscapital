@@ -82,7 +82,7 @@
   margin-left: 5px;
   margin-right: 10px;
 }
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
   .project-content p {
     font-size: 15px;
   }

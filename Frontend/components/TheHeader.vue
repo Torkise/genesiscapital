@@ -114,7 +114,7 @@ nav a:hover {
     transition: background-color 0.3s ease;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 950px) {
     .menu-icon {
         display: block;
         /* Show the menu icon on smaller screens */
