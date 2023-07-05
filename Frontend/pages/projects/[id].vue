@@ -1,10 +1,8 @@
 <template>
     <div class="project-div">
-        <NuxtLink :to="'/projects/'"> 
-            <div class="back-button-wrap">
-                <img class="back-button" src="../../assets/img/back.png">
-            </div>
-        </NuxtLink>
+      <div class="back-button-wrap">
+          <img class="back-button" src="../../assets/img/back.png" @click="goBack"/>
+      </div>
       <pagetitle>{{ project.title }}</pagetitle>
       <div class="project-area" :class="area.name.toLowerCase()" v-for="area in areas">
         <NuxtLink :to="'/areas/' + area.id"> 
@@ -51,6 +49,11 @@
         employee,
       };
     },
+    methods: {
+    goBack() {
+      this.$router.go(-1);
+    }
+  }
   });
   </script>
   
@@ -97,6 +100,9 @@
     margin-right: auto;
     display: block;
   }
+  .project-area:hover {
+    background-color: #FFC492;
+}
   
   @media (max-width: 768px) {
     .project-content {

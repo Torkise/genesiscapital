@@ -1,11 +1,9 @@
 <template>
     <container>
         <content>
-            <NuxtLink :to="'/employees/'"> 
-                <div class="back-button-wrap">
-                    <img class="back-button" src="../../assets/img/back.png">
-                </div>
-            </NuxtLink>
+            <div class="back-button-wrap">
+                <img class="back-button" src="../../assets/img/back.png" @click="goBack"/>
+            </div>
             <pagetitle>{{ employee.name }}</pagetitle>
             <div class="employee-title">
                 <h3>{{ employee.title }}</h3>
@@ -40,6 +38,11 @@ export default defineNuxtComponent({
             projects,
             hasProjects
         }
+    },
+    methods: {
+    goBack() {
+      this.$router.go(-1);
+    }
     }
 })
 </script>

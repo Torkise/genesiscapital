@@ -33,8 +33,8 @@ export default defineNuxtComponent({
         <div class="areas-image-box" v-for="area in areas">
           <NuxtLink :to="'/areas/' + area.id">
             <img :src="area.mainphoto">
-            <p class="area-name">{{ area.name }}</p>
           </NuxtLink>
+          <p class="area-name">{{ area.name }}</p>
         </div>
       </div>
     </div>

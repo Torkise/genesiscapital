@@ -14,7 +14,7 @@ export default async (models) => {
           name: "Jane Smith",
           title: "Investment Associate",
           bio: "Jane specializes in identifying emerging technologies and investment opportunities. With a keen eye for market trends, she excels in analyzing potential risks and returns for our clients. Jane's passion for technology and finance drives her to stay up-to-date with the latest industry developments. She has a proven track record of successfully advising clients on strategic investment decisions, helping them achieve their financial goals. Jane's dedication, analytical skills, and attention to detail make her an invaluable asset to our team.",
-          photo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSO41wh39rFylf4ODozc5ZJSBIXNsa1ok9EIg&usqp=CAU",
+          photo: "https://formalign.com/wp-content/uploads/2023/01/colleagues-with-headphones-working-call-center-office-500x500.jpg",
         },
         {
           id: 3,
@@ -206,6 +206,26 @@ export default async (models) => {
             areas: "['Technology']",
             featured: false,
             photo:"https://images.squarespace-cdn.com/content/v1/5e7203036c556712eb563b48/635ecb07-e60c-4929-a89c-465e1b1d92b6/RAC_FOP2_Avetta.jpg",
+          },
+          {
+            id: 14,
+            title: 'Renewable Energy Microgrids',
+            shortDescription: 'Deploying microgrid systems for decentralized renewable energy generation',
+            longDescription: 'This project focuses on the implementation of renewable energy microgrids to enable decentralized and independent power generation. By integrating various renewable energy sources such as solar, wind, and hydro, the project aims to create sustainable and resilient energy systems at the community level. The project involves designing and optimizing microgrid architectures, incorporating energy storage solutions, and developing smart grid management techniques for efficient energy distribution.',
+            supervisor: 2,
+            areas: "['Energy', 'Technology']",
+            featured: false,
+            photo: "https://renewep.com/wp-content/uploads/2018/10/microgrid-design.jpg",
+          },
+          {
+            id: 15,
+            title: 'Smart Cities Infrastructure',
+            shortDescription: 'Building intelligent infrastructure for sustainable and connected cities',
+            longDescription: 'This project focuses on developing smart city infrastructure to enhance urban living and sustainability. The project aims to leverage Internet of Things (IoT) technologies, data analytics, and automation to optimize resource management, improve transportation systems, and enhance the overall quality of life in cities. By integrating various components such as smart grids, intelligent transportation systems, and efficient waste management, the project seeks to create future-proof cities that are environmentally friendly and technologically advanced.',
+            supervisor: 4,
+            areas: "['Sustainability']",
+            featured: false,
+            photo: "https://www.ukconstructionmedia.co.uk/wp-content/uploads/smart-cities-infrastructure-min.jpg",
           },
         
     ]
