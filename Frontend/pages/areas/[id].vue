@@ -57,14 +57,14 @@ export default defineNuxtComponent({
 }
 
 @media (max-width: 768px) {
-  .contactus {
-    font-size: 16px;
+  .area-content {
+    font-size: 19px;
   }
 }
 
 @media (max-width: 480px) {
   .contactus {
-    font-size: 11px;
+    font-size: 16px;
   }
 }
 .area-content img {

@@ -52,7 +52,8 @@ export default {
 }
 
 .project-box p {
-    margin-bottom: 0.5rem;
+    font-size: 20px;
+    margin-bottom: 0.rem;
     margin-left: rem;
 }
 
@@ -62,7 +63,7 @@ export default {
     -webkit-text-fill-color: transparent;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1000px) {
     .project-box {
         max-width: 100%;
     }
