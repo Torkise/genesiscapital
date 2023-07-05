@@ -55,7 +55,46 @@ export default defineNuxtComponent({
     font-size: large;
     position: relative;
 }
+ p {
+  font-size: 26px;
+  font-family: Poppins;
+  color: #333;
+  margin-bottom: 2rem;
+  margin-left: 100px;
+  margin-right: 10px;
+}
 
+@media (max-width: 768px) {
+  .contactus {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .contactus {
+    font-size: 11px;
+  }
+}
+ .featured p {
+  font-size: 20px;
+  font-family: Poppins;
+  color: #333;
+  margin-bottom: 2rem;
+  margin-left: 100px;
+  margin-right: 10px;
+}
+
+@media (max-width: 768px) {
+  .contactus {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 480px) {
+  .contactus {
+    font-size: 10px;
+  }
+}
 .featured {
     width: 60vw;
     padding: 1rem 2rem 2rem 2rem;

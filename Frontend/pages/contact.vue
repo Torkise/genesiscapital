@@ -24,10 +24,7 @@
 </template>
 
 <style>
-.contactus {
-  margin-left: 4rem;
-  margin-right: 4rem;
-}
+
 .social-media {
   display: flex;
   margin-top: 2rem;

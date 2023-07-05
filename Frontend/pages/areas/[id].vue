@@ -47,7 +47,26 @@ export default defineNuxtComponent({
     display: flex;
     flex-direction: row;
 }
+.area-content  {
+  font-size: 26px;
+  font-family: Poppins;
+  color: #333;
+  margin-bottom: 2rem;
+  margin-left: 100px;
+  margin-right: 10px;
+}
 
+@media (max-width: 768px) {
+  .contactus {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .contactus {
+    font-size: 11px;
+  }
+}
 .area-content img {
     width: 30vw;
     height: 30vw;
