@@ -2,7 +2,10 @@
   <HomePageImage />
   <div class="home">
     <pagetitle>Welcome to Genesis Capital</pagetitle>
-    <p>Welcome to Venture Capital, where we are passionate about supporting visionary entrepreneurs with game-changing ideas. Our mission is to help turn your bold ideas into successful businesses by providing the capital, resources, and expertise you need to grow.</p>
+<p>We're delighted to have you here, where our passion lies in supporting visionary entrepreneurs with game-changing ideas. Our mission is simple yet powerful: to help turn your bold ideas into successful businesses.</p>
+<p>
+As a venture capital firm, we provide the capital, resources, and expertise you need to bring your dreams to life. We invest in early-stage and high-growth companies with the potential to make a significant impact. Beyond funding, we offer strategic guidance, mentorship, and a wealth of industry-specific insights.
+</p>
   </div>
   <div class="section">
     <div class="image-wrapper">
