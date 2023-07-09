@@ -1,1 +1,0 @@
-import{d as o}from"./component.1cd63937.js";/* empty css                       */import{_ as e,f as n,t as r,o as s}from"./entry.e14311e4.js";const a=o({async asyncData(){return{id:3}},methods:{goBack(){this.$router.go(-1)}}});function c(t,i,d,p,_,f){return s(),n("div",null,r(t.id),1)}const $=e(a,[["render",c]]);export{$ as default};
