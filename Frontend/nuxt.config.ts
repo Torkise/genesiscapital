@@ -1,5 +1,3 @@
-import { buildAssetsDir } from "nuxt/dist/core/runtime/nitro/paths";
-
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
     css: [
@@ -15,7 +13,7 @@ export default defineNuxtConfig({
     app: {
         // Checking environment variable to decide whether the link 
         baseURL: '/genesiscapital/', // Name of your GitHub Repository
-        buildAssetsDir: 'buildAssetsDir'
+        buildAssetsDir: 'buildAssetsDir',
     },
     experimental: {
         payloadExtraction: false
