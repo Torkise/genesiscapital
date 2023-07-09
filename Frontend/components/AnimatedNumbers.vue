@@ -1,4 +1,5 @@
 <template>
+  <!-- Animated numbers component -->
     <div>{{ formattedNumber }}</div>
   </template>
   
@@ -11,7 +12,7 @@
       },
       duration: {
         type: Number,
-        default: 2000 // 1 second by default
+        default: 2000 
       },
       noText: {
         type: String,

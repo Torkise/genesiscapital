@@ -6,6 +6,7 @@
       they need to succeed.</p>
   </div>
   
+  <!-- Classes for the statistics and component for the animated numbers -->
   <div class="statistics">
       <div class="statistic">
         <h3 class="statistic-number"><AnimatedNumbers :number=100></AnimatedNumbers></h3>

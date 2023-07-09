@@ -9,6 +9,7 @@
             change in the world. By collaborating with visionary founders and industry leaders, we are unlocking
             new
             possibilities and paving the way for a brighter future.</p>
+        <!-- Similar to the project page, but with only the featured projects. -->
         <div class="featured" v-for="project in featuredProjects" :key="project.id">
             <div class="area" :class="area.toLowerCase()" v-for="area in project.areas" :key="area">
                 <NuxtLink :to="'/areas/' + get_area_id(area)">

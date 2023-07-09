@@ -1,6 +1,7 @@
 <template>
   <container>
     <div class="areas">
+      <!-- Back button -->
       <div class="back-button-wrap">
         <img class="back-button" src="../../assets/img/back.png" @click="goBack" />
       </div>
@@ -8,6 +9,7 @@
       <div class="area-content">
         <div class="area-description">
           <normal-text>{{ area.description }}</normal-text>
+          <!-- Using project box component -->
           <project-box
             :title="'Current Projects in this area:'"
             :projects="projects"
@@ -22,6 +24,7 @@
 <script>
 import ProjectBox from "@/components/ProjectBox.vue";
 
+// Fetching the areas and projects from the database
 export default defineNuxtComponent({
   async asyncData() {
     const route = useRoute();
