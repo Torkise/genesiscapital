@@ -1,0 +1,1 @@
+import{d as a}from"./component.29ad6c97.js";import{_ as o,f as s,o as t,a as n}from"./entry.a9b5e592.js";const r=a({async asyncData(){return{areas:"ciao"}}}),c=n("p",null,"areas",-1),_=[c];function d(e,i,p,f,l,u){return t(),s("div",null,_)}const $=o(r,[["render",d]]);export{$ as default};

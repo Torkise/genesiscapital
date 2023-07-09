@@ -1,1 +1,0 @@
-import{d as e}from"./component.7e17cdc2.js";import{_ as t,f as o,d as s,t as n,a as r,o as c}from"./entry.4fba62fd.js";const i=e({async asyncData(){return{areas:"ciao"}}}),d=r("p",null,"ciao",-1);function p(a,_,f,l,u,m){return c(),o("div",null,[s(n(a.areas)+" ",1),d])}const y=t(i,[["render",p]]);export{y as default};
