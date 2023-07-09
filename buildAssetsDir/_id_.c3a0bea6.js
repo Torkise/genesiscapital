@@ -1,0 +1,1 @@
+import{d as e}from"./component.9c487106.js";import{_ as s,u as n,f as a,t as r,o as c}from"./entry.90df4807.js";const i=e({async asyncData(){return{id:n().params.id}}});function d(t,o,p,u,_,f){return c(),a("div",null,r(t.id),1)}const $=s(i,[["render",d]]);export{$ as default};
