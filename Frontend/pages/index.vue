@@ -1,6 +1,8 @@
 <template>
+  <!-- HomePageImage component added -->
   <HomePageImage />
   <div class="home">
+  <!-- Dummy data and links to the other views -->
     <pagetitle>Welcome to Genesis Capital</pagetitle>
     <p>Welcome to Venture Capital, where we are passionate about supporting visionary entrepreneurs with game-changing ideas. Our mission is to help turn your bold ideas into successful businesses by providing the capital, resources, and expertise you need to grow.</p>
   </div>

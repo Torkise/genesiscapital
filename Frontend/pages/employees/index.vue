@@ -11,6 +11,7 @@
           our clients. Get to know our team members below:</p>
       </div>
       <div class="employees-list">
+        <!-- Iterates through the employees and creates a n employee card -->
         <div v-for="employee in employees" :key="employee.id">
           <NuxtLink :to="'/employees/' + employee.id">
             <div class="employee-card">

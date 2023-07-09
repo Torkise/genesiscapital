@@ -4,6 +4,7 @@
             <div class="back-button-wrap">
                 <img class="back-button" src="../../assets/img/back.png" @click="goBack"/>
             </div>
+            <!-- Lists data from the database -->
             <pagetitle>{{ employee.name }}</pagetitle>
             <div class="employee-title">
                 <h3>{{ employee.title }}</h3>
@@ -12,6 +13,7 @@
                 <img class="employee-page-img" :src="employee.photo">
                 <p>{{ employee.bio }}</p>
             </div>
+            <!-- Utilizing the project box -->
             <project-box  :title="'Supervises The Following Projects:'" :projects="projects" :hasProjects="hasProjects" />
         </content>
     </container>
@@ -22,6 +24,7 @@
 <script>
 import ProjectBox from '@/components/ProjectBox.vue';
 
+// Fetching the employee and project data from the database
 export default defineNuxtComponent({
     async asyncData() {
         const route = useRoute()

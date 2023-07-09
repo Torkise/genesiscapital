@@ -16,6 +16,7 @@ body
 
 .back-button {
     width: 40px;
+    cursor: pointer;
 }
 .back-button-wrap {
     margin-top: 1rem;

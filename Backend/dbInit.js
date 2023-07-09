@@ -229,7 +229,7 @@ export default async (models) => {
           },
         
     ]
-    const areaModel = [
+    const areaModel = [ 
       {
         id: 1,
         name: "Technology",

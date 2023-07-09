@@ -1,4 +1,5 @@
 <script>
+// Fetching the project data from database
 export default defineNuxtComponent({
   async asyncData() {
     const route = useRoute()
@@ -19,10 +20,12 @@ export default defineNuxtComponent({
         promising ventures across a variety of sectors. Explore our portfolio and learn more about the exciting new
         companies we are supporting.</p>
       <div class="project-list">
+        <!-- Looping through the projects and adding the necessary links for other parts of the website -->
         <div v-for="project in projects" :key="project.id">
           <NuxtLink :to="'/projects/' + project.id">
             <div class="project">
               <div class="project-area" :class="area.toLowerCase()" v-for="area in project.areas" :key="area">
+                <!-- Helper function to find area id -->
                 <NuxtLink :to="'/areas/' + get_area_id(area)">
                   {{ area }}
                 </NuxtLink>
