@@ -24,12 +24,14 @@ import ProjectBox from "@/components/ProjectBox.vue";
 
 export default defineNuxtComponent({
   async asyncData() {
-    const route = useRoute();
+    // const route = useRoute();
+    // const id = route.params.id;
+    const id = 1;
     const areaPromise = $fetch(
-      useRuntimeConfig().public.serverURL + "/areas/area=" + route.params.id
+      useRuntimeConfig().public.serverURL + "/areas/area=" + id
     );
     const projectsPromise = $fetch(
-      useRuntimeConfig().public.serverURL + "/projects/area=" + route.params.id
+      useRuntimeConfig().public.serverURL + "/projects/area=" + id
     );
     const [area, projects] = await Promise.all([areaPromise, projectsPromise]);
 
