@@ -1,0 +1,1 @@
+import{_ as t,u as n,f as r,t as s,o}from"./entry.3ee047b9.js";import{d as c}from"./component.988eb04c.js";const i=c({async asyncData(){return{area:await $fetch(n().public.serverURL+"/areas/area=3")}}});function p(a,e,f,u,d,_){return o(),r("div",null,s(a.area.name),1)}const $=t(i,[["render",p]]);export{$ as default};
