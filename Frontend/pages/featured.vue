@@ -80,7 +80,7 @@ export default defineNuxtComponent({
 
 .text-box img {
     max-width: 40vh;
-    max-height: 40vh;
+    max-height: 30vh;
     width: 100%;
     border-radius: 10%;
     margin-right: 2rem;
