@@ -1,0 +1,1 @@
+export default {data:{"options:asyncdata:/featured":null},prerenderedAt:1688913743413}

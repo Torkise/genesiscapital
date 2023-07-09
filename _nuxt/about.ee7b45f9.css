@@ -1,0 +1,1 @@
+.about{margin-left:4rem;margin-right:4rem}.statistics{display:flex;justify-content:center;margin-top:2rem}.statistic{margin:0 2rem;text-align:center}.statistic-number{font-size:36px;font-weight:700}.statistic-label{color:#888;font-size:14px}@media (max-width:768px){.statistic{flex-direction:column}.statistic-number{font-size:22px}.statistic-label{font-size:12px}}
