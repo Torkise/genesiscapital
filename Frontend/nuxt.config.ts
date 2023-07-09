@@ -16,5 +16,8 @@ export default defineNuxtConfig({
         // Checking environment variable to decide whether the link 
         baseURL: '/genesiscapital/', // Name of your GitHub Repository
         buildAssetsDir: 'buildAssetsDir'
-    }
+    },
+    experimental: {
+        payloadExtraction: false
+      }
 })
