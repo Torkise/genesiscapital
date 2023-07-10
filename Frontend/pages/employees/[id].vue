@@ -13,11 +13,6 @@
                 <img class="employee-page-img" :src="employee.photo">
                 <p>{{ employee.bio }}</p>
             </div>
-<<<<<<< HEAD
-            
-=======
-            <!-- Utilizing the project box -->
->>>>>>> origin/master
             <project-box  :title="'Supervises The Following Projects:'" :projects="projects" :hasProjects="hasProjects" />
         </content>
     </container>
@@ -88,9 +83,9 @@ export default defineNuxtComponent({
   margin-right: 10px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
   .employee-content p {
-    font-size: 18px;
+    font-size: 20px;
   }
 }
 
