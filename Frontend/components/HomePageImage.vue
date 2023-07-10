@@ -1,4 +1,5 @@
 <template>
+    <!-- Component for image rotatation on the main page. -->
     <div class="image-container">
         <Transition name="fade" mode="out-in" >
                 <img :src="currentImage" alt="Employees Photo" class="image-transition" :key="currentImage"> 
@@ -13,6 +14,7 @@
 <script lang="ts">
 
 export default {
+  // Images uses in slideshow and settings for image rotation
     data() {
         return {
             currentImage: "https://images.pexels.com/photos/6153354/pexels-photo-6153354.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2", 

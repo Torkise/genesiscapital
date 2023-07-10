@@ -1,4 +1,5 @@
 <template>
+    <!-- The default page containing footer, sidebar and header. This is loaded on every page. -->
     <div class='page'>
         <TheHeader @toggle-sidebar="toggleSidebar" />
         <Sidebar :is-open="isSidebarOpen" @close-sidebar="closeSidebar" />

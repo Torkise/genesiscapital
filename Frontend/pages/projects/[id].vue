@@ -1,10 +1,9 @@
 <template>
     <div class="project-div">
-        <NuxtLink :to="'/projects/'"> 
-            <div class="back-button-wrap">
-                <img class="back-button" src="../../assets/img/back.png">
-            </div>
-        </NuxtLink>
+      <div class="back-button-wrap">
+          <img class="back-button" src="../../assets/img/back.png" @click="goBack"/>
+      </div>
+      <!-- Provides info from the database for a project and adds links to employees and areas aswell -->
       <pagetitle>{{ project.title }}</pagetitle>
       <div class="project-area" :class="area.name.toLowerCase()" v-for="area in areas">
         <NuxtLink :to="'/areas/' + area.id"> 
@@ -27,6 +26,7 @@
   </template>
   
   <script>
+  // Data from backend
   export default defineNuxtComponent({
     async asyncData() {
       const route = useRoute();
@@ -51,6 +51,11 @@
         employee,
       };
     },
+    methods: {
+    goBack() {
+      this.$router.go(-1);
+    }
+  }
   });
   </script>
   
@@ -175,6 +180,9 @@
     margin-right: auto;
     display: block;
   }
+  .project-area:hover {
+    background-color: #FFC492;
+}
   
   @media (max-width: 768px) {
     .project-content {

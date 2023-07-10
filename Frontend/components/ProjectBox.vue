@@ -1,4 +1,5 @@
 <template>
+    <!-- The project box component uses for showcasing projects -->
     <div class="project-box">
         <h2>{{ title }}</h2>
         <div v-if="hasProjects" v-for="(project, index) in projects" :key="index">

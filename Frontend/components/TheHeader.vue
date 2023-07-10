@@ -1,11 +1,13 @@
 <template>
     <header>
+        <!-- This is the header -->
         <div class="header-left">
             <NuxtLink to="/">
                 <img alt="Vue logo" class="logo" src="@/assets/logo.svg" />
             </NuxtLink>
 
         </div>
+        <!-- Here is the nav bar or the sidebar depending on the screen size -->
         <div class="header-right">
             <nav>
                 <div class="menu-icon" @click="toggleSidebar">

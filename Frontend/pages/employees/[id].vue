@@ -1,11 +1,10 @@
 <template>
     <container>
         <content>
-            <NuxtLink :to="'/employees/'"> 
-                <div class="back-button-wrap">
-                    <img class="back-button" src="../../assets/img/back.png">
-                </div>
-            </NuxtLink>
+            <div class="back-button-wrap">
+                <img class="back-button" src="../../assets/img/back.png" @click="goBack"/>
+            </div>
+            <!-- Lists data from the database -->
             <pagetitle>{{ employee.name }}</pagetitle>
             <div class="employee-title">
                 <h3>{{ employee.title }}</h3>
@@ -14,7 +13,11 @@
                 <img class="employee-page-img" :src="employee.photo">
                 <p>{{ employee.bio }}</p>
             </div>
+<<<<<<< HEAD
             
+=======
+            <!-- Utilizing the project box -->
+>>>>>>> origin/master
             <project-box  :title="'Supervises The Following Projects:'" :projects="projects" :hasProjects="hasProjects" />
         </content>
     </container>
@@ -25,6 +28,7 @@
 <script>
 import ProjectBox from '@/components/ProjectBox.vue';
 
+// Fetching the employee and project data from the database
 export default defineNuxtComponent({
     async asyncData() {
         const route = useRoute()
@@ -41,6 +45,11 @@ export default defineNuxtComponent({
             projects,
             hasProjects
         }
+    },
+    methods: {
+    goBack() {
+      this.$router.go(-1);
+    }
     }
 })
 </script>

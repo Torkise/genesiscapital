@@ -1,4 +1,5 @@
 <template>
+    <!-- Links to other pages from the side bar -->
     <div class="sidebar" :class="{ open: isOpen }">
         <ul>
             <li>

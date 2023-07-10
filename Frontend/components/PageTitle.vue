@@ -1,4 +1,5 @@
 <template>
+    <!-- Page title component to ensure same title style on every page without redundant code -->
     <h1 class="page-title">
         {{ title }}
     </h1>
